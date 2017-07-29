@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录页面</title>
+    <link href="../css/login.css" rel="stylesheet" type="text/css">
+    <script src="../js/jquery-2.1.1/jquery.js"></script>
+    <script src="../js/cookie.js"></script>
+    <script src="../js/login.js"></script>
+    <script src="../js/index.js"></script>
+</head>
+<body>
+<div id="header">
+    <div class="head">
+        <div class="logo">
+            <a href="javascript:;"><img src="../img/shop_182x60.png" width="182" height="60"><p>中关村在线旗下网上商城</p></a>
+        </div>
+        <div class="log">
+            <span>还没有ZOL商城账号?</span><a href="register.html">立即注册</a>
+        </div>
+    </div>
+</div>
+<div id="wrapper">
+    <div class="wrap">
+        <div class="logo left"><a href="index.html"><img src="../img/ad2.jpg"></a></div>
+        <form class="register right" method="get" action="index.html">
+            <div class="login">
+                <h3>登录ZOL商城<a href="javascript:;">手机动态码登陆</a></h3>
+                <div class="m">
+                    <input class="text" type="text" placeholder="手机号/邮箱/用户名" autocomplete="off">
+                    <span class="wrong" style="display: none;">用户名或密码错误！</span>
+                    <input class="text" type="password" placeholder="密码" autocomplete="off">
+                    <p class="pass"><input class="check" type="checkbox">记住登录状态<a class="forget" href="javascript:;">忘记密码？</a></p>
+                    <input class="btn" type="button" value="登录">
+                </div>
+
+                <p class="cooper"><a class="weixin" href="https://open.weixin.qq.com/connect/qrconnect?appid=wx5b1a2b570ea8098e&redirect_uri=http%3A%2F%2Fservice.zol.com.cn%2Fuser%2Fapi%2Fweixin%2Fcallback.php&response_type=code&scope=snsapi_login&state=0"></a><a class="weibo" href="https://api.weibo.com/oauth2/authorize?client_id=4028615622&redirect_uri=http%3A%2F%2Fservice.zol.com.cn%2Fuser%2Fapi%2Fsina%2Fcallback.php&response_type=code"></a><a class="qq" href="https://graph.qq.com/oauth/show?which=Login&display=pc&response_type=code&client_id=208936&redirect_uri=http%3A%2F%2Fservice.zol.com.cn%2Fuser%2Fapi%2Fqq%2Flibs%2Foauth%2Fget_access_token.php&state=d129e7b9e350483ef0dee95d2b16f5cb&scope=get_user_info,add_share,list_album,add_album,upload_pic,add_topic,add_one_blog,add_weibo,check_page_fans,get_info,add_pic_t,get_repost_list,get_other_info,get_fanslist,get_idollist,add_idol,del_idol"></a><a class="zhifu" href="https://auth.alipay.com/login/express.htm?goto=https%3A%2F%2Fmemberexprod.alipay.com%3A443%2Fauthorize%2FuserAuthQuickLoginAction.htm%3Fe_i_i_d%3D0779f0af564d59c47a716d1ef54d318f"></a><a class="baidu" href="https://openapi.baidu.com/oauth/2.0/authorize?response_type=code&client_id=S8mu6XF2eyofbNPHkpUZwy79&redirect_uri=http%3A%2F%2Fservice.zol.com.cn%2Fuser%2Fapi%2Fbaidu%2Fcallback.php&scope=&state=ad3484d9f37ab2cdc39f53ccfcfa3d5e&display=page"></a><span>合作账号登录</span></p>
+            </div>
+        </form>
+    </div>
+</div>
+<div id="footer">
+    <div class="foot">
+        <div class="l">
+            <a href="javascript:;">关于ZOL商城</a>|
+            <a href="javascript:;">联系我们</a>|
+            <a href="javascript:;">帮助中心</a>
+        </div>
+        <div class="r">
+            <span>©2016. 中关村在线 版权所有</span>
+        </div>
+    </div>
+</div>
+</body>
+</html>

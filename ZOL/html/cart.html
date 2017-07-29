@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>购物车</title>
+    <link rel="stylesheet" href="../css/cart.css">
+    <script src="../js/jquery-2.1.1/jquery.js"></script>
+    <script src="../js/cookie.js"></script>
+    <script src="../js/cart.js"></script>
+    <script src="../js/index.js"></script>
+</head>
+<body>
+<div id="topbar">
+    <div class="top">
+        <div class="topl left">
+            <span class="home"><a href="index.html">商城首页</a></span>
+            <span class="login">Hi~<span class="user">欢迎来到ZOL商城，</span><a class="dl" href="login.html">请登录</a><!--<span class="exit" style="display:none"><a
+                    href="index.html">退出</a></span>--></span>
+            <span class="register"><a href="register.html">免费注册</a></span>
+        </div>
+        <div class="topr right">
+            <li><a href="javascript:;">我的订单</a></li>
+            <li class="shop hover1">
+                <a  class="center" href="javascript:;">买家中心<i class="ico active"></i></a>
+                <div class="cen" style="display: none;">
+                    <a href="#">关注的商品&nbsp;&nbsp;<em>8</em></a>
+                    <br>
+                    <a href="#">关注的店铺&nbsp;&nbsp;<em>30</em></a>
+                </div>
+            </li>
+            <li><a href="cart.html">购物车<i class="goodsNum">0</i>件</a></li>
+            <li><a href="javascript:;">帮助中心</a></li>
+            <li><a href="javascript:;">|</a></li>
+            <li class="mobile hover"><a class="mob" href="javascript:;">手机商城<i class="ico active"></i></a>
+                <div class="img" style="display: none;">
+                    <img src="../img/shop_wechat.png" width="130" height="130">
+                </div>
+            </li>
+            <li><a href="javascript:;">中关村在线</a></li>
+            <li><a href="javascript:;">商家入驻</a></li>
+            <li class="connect"><a class="con" href="javascript:;">联系客服<i class="ico active"></i></a></li>
+        </div>
+    </div>
+</div>
+<div id="cartheader">
+    <div class="carthead">
+        <div class="logo left"><a href="javascript:;"><img src="../img/shop_212x40.jpg" alt="" width="212" height="40"></a><a href="javascript:;"><img
+                src="../img/logo-text.png" alt="" width="165" height="40"></a></div>
+        <div class="step right">
+            <ul class="flow-step">
+                <li class="s1">加入购物车</li>
+                <li class="s2">下订单</li>
+                <li class="s3">去付款</li>
+                <li class="s4">确认收货</li>
+                <li class="s5">评价</li>
+            </ul>
+        </div>
+    </div>
+    <div class="wrapper">
+        <form action="">
+            <div class="cart-state mt">
+                <p>购物车状态<em>（30/30）</em></p>
+                <div class="total">
+                    <input type="button" value="去结算" class="button">
+                    <span>总计（不含运费）：<em>￥</em><em class="total-price">0</em></span>
+                </div>
+            </div>
+            <div class="order-table mt20">
+                <table width="100%">
+                    <tr>
+                        <th class="th-1">
+                            <label>
+                                <input type="checkbox" value="1" checked class="all a1">全选
+                            </label>
+                        </th>
+                        <th class="th-2">所选商品</th>
+                        <th class="th-3">单价（元）</th>
+                        <th class="th-4">数量</th>
+                        <th class="th-5">优惠</th>
+                        <th class="th-6">小计（元）</th>
+                        <th class="th-7">操作</th>
+                    </tr>
+                    <tr>
+                        <td colspan="7" class="store-infor">
+                            <div class="shopname">
+                                <input type="checkbox" class="all" checked>店铺：
+                                <a href="javascript:;">郑新数码专营店</a>
+                            </div>
+                            <div class="contact">
+                                <a href="javascript:;" class="tag-security" style="margin:0 -9px 0 0">&nbsp;</a>
+                            </div>
+                            <div class="contact">
+                                <a href="javascript:;"><img src="../img/button_121.gif" alt=""></a>
+                            </div>
+                        </td>
+                    </tr>
+                    <!--<tr>
+                        <td colspan="2" class="s-infor">
+                            <input type="checkbox" checked>
+                            <a href="javascript:;" class="pic"><img src="../img/cart1.jpg" alt=""></a>
+                            <div class="inforbox">
+                                <h3 class="tit"><a href="javascript:;">六代 i3 6100 集成HD530显卡 /微星 H110M /8G内存/120G SSD 入门 游戏主机  I3 也能LOL 60帧</a></h3>
+                                <div class="security">
+                                    <a href="javascript:;" class="security-a"></a>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="s-price"><em>1699</em></td>
+                        <td class="s-amount">
+                            <div class="buy-num">
+                                <a class="minus" href="javascript:;">-</a>
+                                <input type="text" autocomplete="off" class="text-amount">
+                            <a class="plus" href="javascript:;">+</a>
+                                <div class="tips-2"></div>
+                            </div>
+                        </td>
+                        <td class="s-agio">
+                            <div>&#45;&#45;</div>
+                        </td>
+                        <td class="s-total">
+                            <em>3398</em>
+                        </td>
+                        <td class="s-del">
+                            <div class="s-delbox">
+                                <a href="javascript:;">移入收藏夹</a><a href="javascript:;" class="del">删除</a>
+                                <div class="deletebox">
+                                    <p>确认要删除该商品么？</p>
+                                    <a href="javascript:;" class="yes">是的</a><a href="javascript:;" class="no">取消</a>
+                                    <i></i>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="s-infor">
+                            <input type="checkbox" checked>
+                            <a href="javascript:;" class="pic"><img src="../img/cart1.jpg" alt=""></a>
+                            <div class="inforbox">
+                                <h3 class="tit"><a href="javascript:;">六代 i3 6100 集成HD530显卡 /微星 H110M /8G内存/120G SSD 入门 游戏主机  I3 也能LOL 60帧</a></h3>
+                                <div class="security">
+                                    <a href="javascript:;" class="security-a"></a>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="s-price"><em>1699</em></td>
+                        <td class="s-amount">
+                            <div class="buy-num">
+                                <a class="minus" href="javascript:;">-</a>
+                                <input type="text" autocomplete="off" class="text-amount">
+                                <a class="plus" href="javascript:;">+</a>
+                                <div class="tips-2"></div>
+                            </div>
+                        </td>
+                        <td class="s-agio">
+                            <div>&#45;&#45;</div>
+                        </td>
+                        <td class="s-total">
+                            <em>3398</em>
+                        </td>
+                        <td class="s-del">
+                            <div class="s-delbox">
+                                <a href="javascript:;">移入收藏夹</a><a href="javascript:;">删除</a>
+                                <div class="deletebox">
+                                    <p>确认要删除该商品么？</p>
+                                    <a href="javascript:;">是的</a><a href="javascript:;">取消</a>
+                                    <i></i>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>-->
+                </table>
+                <div class="total-cart-price">商品总价 <span>(不含运费)</span>: <em>￥</em> <em class="total-price">0</em></div>
+                <div class="order-foot">
+                    <label>
+                        <input type="checkbox" value="1" checked class="all a1">全选
+                    </label>
+                    <a href="javascript:;">批量删除</a><a href="javascript:;" class="go-shopping"> << 继续购物 </a>
+                    <input type="button" value="去结算" class="accounting-btn">
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<div id="foot">
+    <div class="footer">
+        <p class="links">
+            <a href="javascript:;">关于商城</a>|<a href="javascript:;">营销中心</a>|<a href="javascript:;">服务中心</a>|<a
+                href="javascript:;">联系我们</a>|<a href="javascript:;">发展历程</a>|<a href="javascript:;">媒体报道</a>
+        </p>
+        <p>©2016中关村在线 版权所有. 京ICP备09041801号-182 <a href="javascript:;">京ICP证010391号</a></p>
+        <p class="lastp"><a href="javascript:;"><img src="../img/beian.png" alt=""></a><a href="javascrpt:;"><img src="../img/jingcha.png" alt=""></a><a href="javascript:;"><img
+                src="../img/cert.png" alt=""></a></p>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,1187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>商品列表页</title>
+    <link href="../css/list.css" rel="stylesheet" type="text/css">
+    <script src="../js/jquery-2.1.1/jquery.js"></script>
+    <script src="../js/list.js"></script>
+    <script src="../js/index.js"></script>
+</head>
+<body>
+<div id="topbar">
+    <div class="top">
+        <div class="topl left">
+            <span class="home"><a href="index.html">商城首页</a></span>
+            <span class="login">Hi~欢迎来到ZOL商城，<a href="register.html">请登录</a></span>
+            <span class="register"><a href="login.html">免费注册</a></span>
+        </div>
+        <div class="topr right">
+            <li><a href="javascript:;">我的订单</a></li>
+            <li class="shop hover1">
+                <a  class="center" href="javascript:;">买家中心<i class="ico active"></i></a>
+                <div class="cen" style="display: none;">
+                    <a href="#">关注的商品&nbsp;&nbsp;<em>8</em></a>
+                    <br>
+                    <a href="#">关注的店铺&nbsp;&nbsp;<em>30</em></a>
+                </div>
+            </li>
+            <li><a href="cart.html">购物车<i class="goodsNum">0</i>件</a></li>
+            <li><a href="javascript:;">帮助中心</a></li>
+            <li><a href="javascript:;">|</a></li>
+            <li class="mobile hover"><a class="mob" href="javascript:;">手机商城<i class="ico active"></i></a>
+                <div class="img" style="display: none;">
+                    <img src="../img/shop_wechat.png" width="130" height="130">
+                </div>
+            </li>
+            <li><a href="javascript:;">中关村在线</a></li>
+            <li><a href="javascript:;">商家入驻</a></li>
+            <li class="connect"><a class="con" href="javascript:;">联系客服<i class="ico active"></i></a></li>
+        </div>
+    </div>
+</div>
+<div id="header">
+    <div class="head">
+        <div class="logo left">
+            <h1 class="left"><a title="ZOL商场" href="javascript:;"><img src="../img/logo_180x50.png"></a></h1>
+            <p  class="left">中关村在线旗下网上商城</p>
+        </div>
+        <div class="search-box left">
+            <form class="search" action="" method="get">
+                <input type="text" name="keyword" class="text" autocomplete="off" value="">
+                <input type="submit" value="搜索" class="btn">
+            </form>
+            <div class="hot-search">
+                <a href="javascript:;">三星s7 Edge</a>
+                <a href="javascript:;">华为P9</a>
+                <a href="javascript:;">戴尔小XPS仅4999！</a>
+                <a href="javascript:;">GTX1060</a>
+                <a href="javascript:;">九阳豆浆机直降100！</a>
+                <a href="javascript:;">热销机械键盘</a>
+            </div>
+        </div>
+        <div class="ad right">
+            <a href="javascript:;"><img src="../img/dijia.jpg" width="180" height="60" alt="ZOL商城承诺"></a>
+        </div>
+    </div>
+</div>
+<div id="nav-box">
+    <div class="nav">
+        <div class="con1">
+            <ul class="main-con">
+                <li>
+                    <div class="item">
+                        <i class="iconfont">&#xe64d;</i>
+                        <a href="javascript:;">手机通讯</a>
+                        <a href="javascript:;">/ 手机配件</a>
+                    </div>
+                    <div class="category">
+                        <div class="title"><a href="javascript:;"><img src="../img/baozhang2.png"></a></div>
+                        <dl>
+                            <dt><a href="javascript:;">手机通讯</a></dt>
+                            <dd>
+                                <p>
+                                    <a href="javascript:;">手机</a>
+                                    | <a href="javascript:;">老人机</a>
+                                </p>
+                                <p>
+                                    <a href="javascript:;">华为</a>|<a href="javascript:;">苹果</a>|<a href="javascript:;">三星</a>|<a href="javascript:;">魅族</a>|<a href="javascript:;">OPPO</a>|<a href="javascript:;">小米</a>|<a href="javascript:;">HTC</a>|<a href="javascript:;">手机</a>|<a href="javascript:;">乐视</a>|<a href="javascript:;">vivo</a>|<a href="javascript:;">SONY</a>|<a href="javascript:;">飞利浦</a>|<a href="javascript:;">nubia</a>
+                                </p>
+                                <p>
+                                    |<a href="javascript:;">诺基亚</a>|<a href="javascript:;">摩托罗拉</a>|<a href="javascript:;">中兴</a>
+                                </p>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt><a href="javascript:;">手机配件</a></dt>
+                            <dd>
+                                <p>
+                                    <a href="javascript:;">手机</a>
+                                    | <a href="javascript:;">老人机</a>
+                                </p>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt><a href="javascript:;">通讯设备</a></dt>
+                            <dd>
+                                <p>
+                                    <a href="javascript:;">手机</a>
+                                    | <a href="javascript:;">老人机</a>
+                                </p>
+                            </dd>
+                        </dl>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <i class="iconfont">&#xe788;</i>
+                        <a href="javascript:;">笔记本</a>
+                        <a href="javascript:;">/ 平板</a>
+                        <a href="javascript:;">/ 品牌整机</a>
+                    </div>
+                    <div class="category">
+                        <div class="title"><a href="javascript:;"><img src="../img/baozhang2.png"></a></div>
+                        <dl>
+                            <dt><a href="javascript:;">笔记本</a></dt>
+                            <dd>
+                                <p>
+                                    <a href="javascript:;">手机</a>
+                                    | <a href="javascript:;">老人机</a>
+                                </p>
+                                <p>
+                                    <a href="javascript:;">华为</a>|<a href="javascript:;">苹果</a>|<a href="javascript:;">三星</a>|<a href="javascript:;">魅族</a>|<a href="javascript:;">OPPO</a>|<a href="javascript:;">小米</a>|<a href="javascript:;">HTC</a>|<a href="javascript:;">手机</a>|<a href="javascript:;">乐视</a>|<a href="javascript:;">vivo</a>|<a href="javascript:;">SONY</a>|<a href="javascript:;">飞利浦</a>|<a href="javascript:;">nubia</a>
+                                </p>
+                                <p>
+                                    |<a href="javascript:;">诺基亚</a>|<a href="javascript:;">摩托罗拉</a>|<a href="javascript:;">中兴</a>
+                                </p>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt><a href="javascript:;">手机配件</a></dt>
+                            <dd>
+                                <p>
+                                    <a href="javascript:;">手机</a>
+                                    | <a href="javascript:;">老人机</a>
+                                </p>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt><a href="javascript:;">通讯设备</a></dt>
+                            <dd>
+                                <p>
+                                    <a href="javascript:;">手机</a>
+                                    | <a href="javascript:;">老人机</a>
+                                </p>
+                            </dd>
+                        </dl>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <i class="iconfont">&#xe657;</i>
+                        <a href="javascript:;">摄影摄像</a>
+                        <a href="javascript:;">/ 数码配件</a>
+                    </div>
+                    <div class="category">
+                        <div class="title"><a href="javascript:;"><img src="../img/baozhang2.png"></a></div>
+                        <dl>
+                            <dt><a href="javascript:;">数码摄影</a></dt>
+                            <dd>
+                                <p>
+                                    <a href="javascript:;">手机</a>
+                                    | <a href="javascript:;">老人机</a>
+                                </p>
+                                <p>
+                                    <a href="javascript:;">华为</a>|<a href="javascript:;">苹果</a>|<a href="javascript:;">三星</a>|<a href="javascript:;">魅族</a>|<a href="javascript:;">OPPO</a>|<a href="javascript:;">小米</a>|<a href="javascript:;">HTC</a>|<a href="javascript:;">手机</a>|<a href="javascript:;">乐视</a>|<a href="javascript:;">vivo</a>|<a href="javascript:;">SONY</a>|<a href="javascript:;">飞利浦</a>|<a href="javascript:;">nubia</a>
+                                </p>
+                                <p>
+                                    |<a href="javascript:;">诺基亚</a>|<a href="javascript:;">摩托罗拉</a>|<a href="javascript:;">中兴</a>
+                                </p>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt><a href="javascript:;">手机配件</a></dt>
+                            <dd>
+                                <p>
+                                    <a href="javascript:;">手机</a>
+                                    | <a href="javascript:;">老人机</a>
+                                </p>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt><a href="javascript:;">通讯设备</a></dt>
+                            <dd>
+                                <p>
+                                    <a href="javascript:;">手机</a>
+                                    | <a href="javascript:;">老人机</a>
+                                </p>
+                            </dd>
+                        </dl>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <i class="iconfont">&#xe607;</i>
+                        <a href="javascript:;">游戏电玩</a>
+                        <a href="javascript:;">/ 游戏本</a>
+                    </div>
+                    <div class="category">
+                        <div class="title"><a href="javascript:;"><img src="../img/baozhang2.png"></a></div>
+                        <dl>
+                            <dt><a href="javascript:;">游戏电玩</a></dt>
+                            <dd>
+                                <p>
+                                    <a href="javascript:;">手机</a>
+                                    | <a href="javascript:;">老人机</a>
+                                </p>
+                                <p>
+                                    <a href="javascript:;">华为</a>|<a href="javascript:;">苹果</a>|<a href="javascript:;">三星</a>|<a href="javascript:;">魅族</a>|<a href="javascript:;">OPPO</a>|<a href="javascript:;">小米</a>|<a href="javascript:;">HTC</a>|<a href="javascript:;">手机</a>|<a href="javascript:;">乐视</a>|<a href="javascript:;">vivo</a>|<a href="javascript:;">SONY</a>|<a href="javascript:;">飞利浦</a>|<a href="javascript:;">nubia</a>
+                                </p>
+                                <p>
+                                    |<a href="javascript:;">诺基亚</a>|<a href="javascript:;">摩托罗拉</a>|<a href="javascript:;">中兴</a>
+                                </p>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt><a href="javascript:;">手机配件</a></dt>
+                            <dd>
+                                <p>
+                                    <a href="javascript:;">手机</a>
+                                    | <a href="javascript:;">老人机</a>
+                                </p>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt><a href="javascript:;">通讯设备</a></dt>
+                            <dd>
+                                <p>
+                                    <a href="javascript:;">手机</a>
+                                    | <a href="javascript:;">老人机</a>
+                                </p>
+                            </dd>
+                        </dl>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <i class="iconfont">&#x3440;</i>
+                        <a href="javascript:;">DIY硬件</a>
+                        <a href="javascript:;">/ 外机配件</a>
+                    </div>
+                    <div class="category">
+                        <div class="title"><a href="javascript:;"><img src="../img/baozhang2.png"></a></div>
+                        <dl>
+                            <dt><a href="javascript:;">DIY硬件</a></dt>
+                            <dd>
+                                <p>
+                                    <a href="javascript:;">手机</a>
+                                    | <a href="javascript:;">老人机</a>
+                                </p>
+                                <p>
+                                    <a href="javascript:;">华为</a>|<a href="javascript:;">苹果</a>|<a href="javascript:;">三星</a>|<a href="javascript:;">魅族</a>|<a href="javascript:;">OPPO</a>|<a href="javascript:;">小米</a>|<a href="javascript:;">HTC</a>|<a href="javascript:;">手机</a>|<a href="javascript:;">乐视</a>|<a href="javascript:;">vivo</a>|<a href="javascript:;">SONY</a>|<a href="javascript:;">飞利浦</a>|<a href="javascript:;">nubia</a>
+                                </p>
+                                <p>
+                                    |<a href="javascript:;">诺基亚</a>|<a href="javascript:;">摩托罗拉</a>|<a href="javascript:;">中兴</a>
+                                </p>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt><a href="javascript:;">手机配件</a></dt>
+                            <dd>
+                                <p>
+                                    <a href="javascript:;">手机</a>
+                                    | <a href="javascript:;">老人机</a>
+                                </p>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt><a href="javascript:;">通讯设备</a></dt>
+                            <dd>
+                                <p>
+                                    <a href="javascript:;">手机</a>
+                                    | <a href="javascript:;">老人机</a>
+                                </p>
+                            </dd>
+                        </dl>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <i class="iconfont">&#xe74a;</i>
+                        <a href="javascript:;">智能生活</a>
+                        <a href="javascript:;">/ 智能设备</a>
+                    </div>
+                    <div class="category">
+                        <div class="title"><a href="javascript:;"><img src="../img/baozhang2.png"></a></div>
+                        <dl>
+                            <dt><a href="javascript:;">智能生活</a></dt>
+                            <dd>
+                                <p>
+                                    <a href="javascript:;">手机</a>
+                                    | <a href="javascript:;">老人机</a>
+                                </p>
+                                <p>
+                                    <a href="javascript:;">华为</a>|<a href="javascript:;">苹果</a>|<a href="javascript:;">三星</a>|<a href="javascript:;">魅族</a>|<a href="javascript:;">OPPO</a>|<a href="javascript:;">小米</a>|<a href="javascript:;">HTC</a>|<a href="javascript:;">手机</a>|<a href="javascript:;">乐视</a>|<a href="javascript:;">vivo</a>|<a href="javascript:;">SONY</a>|<a href="javascript:;">飞利浦</a>|<a href="javascript:;">nubia</a>
+                                </p>
+                                <p>
+                                    |<a href="javascript:;">诺基亚</a>|<a href="javascript:;">摩托罗拉</a>|<a href="javascript:;">中兴</a>
+                                </p>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt><a href="javascript:;">手机配件</a></dt>
+                            <dd>
+                                <p>
+                                    <a href="javascript:;">手机</a>
+                                    | <a href="javascript:;">老人机</a>
+                                </p>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt><a href="javascript:;">通讯设备</a></dt>
+                            <dd>
+                                <p>
+                                    <a href="javascript:;">手机</a>
+                                    | <a href="javascript:;">老人机</a>
+                                </p>
+                            </dd>
+                        </dl>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <i class="iconfont">&#xe604;</i>
+                        <a href="javascript:;">家用设备</a>
+                        <a href="javascript:;">/ 办公设备</a>
+                    </div>
+                    <div class="category">
+                        <div class="title"><a href="javascript:;"><img src="../img/baozhang2.png"></a></div>
+                        <dl>
+                            <dt><a href="javascript:;">办公设备</a></dt>
+                            <dd>
+                                <p>
+                                    <a href="javascript:;">手机</a>
+                                    | <a href="javascript:;">老人机</a>
+                                </p>
+                                <p>
+                                    <a href="javascript:;">华为</a>|<a href="javascript:;">苹果</a>|<a href="javascript:;">三星</a>|<a href="javascript:;">魅族</a>|<a href="javascript:;">OPPO</a>|<a href="javascript:;">小米</a>|<a href="javascript:;">HTC</a>|<a href="javascript:;">手机</a>|<a href="javascript:;">乐视</a>|<a href="javascript:;">vivo</a>|<a href="javascript:;">SONY</a>|<a href="javascript:;">飞利浦</a>|<a href="javascript:;">nubia</a>
+                                </p>
+                                <p>
+                                    |<a href="javascript:;">诺基亚</a>|<a href="javascript:;">摩托罗拉</a>|<a href="javascript:;">中兴</a>
+                                </p>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt><a href="javascript:;">手机配件</a></dt>
+                            <dd>
+                                <p>
+                                    <a href="javascript:;">手机</a>
+                                    | <a href="javascript:;">老人机</a>
+                                </p>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt><a href="javascript:;">通讯设备</a></dt>
+                            <dd>
+                                <p>
+                                    <a href="javascript:;">手机</a>
+                                    | <a href="javascript:;">老人机</a>
+                                </p>
+                            </dd>
+                        </dl>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <i class="iconfont">&#x343c;</i>
+                        <a href="javascript:;">生活电器</a>
+                        <a href="javascript:;">/ 个护</a>
+                        <a href="javascript:;">/ 家用电器</a>
+                    </div>
+                    <div class="category">
+                        <div class="title"><a href="javascript:;"><img src="../img/baozhang2.png"></a></div>
+                        <dl>
+                            <dt><a href="javascript:;">手机通讯</a></dt>
+                            <dd>
+                                <p>
+                                    <a href="javascript:;">手机</a>
+                                    | <a href="javascript:;">老人机</a>
+                                </p>
+                                <p>
+                                    <a href="javascript:;">华为</a>|<a href="javascript:;">苹果</a>|<a href="javascript:;">三星</a>|<a href="javascript:;">魅族</a>|<a href="javascript:;">OPPO</a>|<a href="javascript:;">小米</a>|<a href="javascript:;">HTC</a>|<a href="javascript:;">手机</a>|<a href="javascript:;">乐视</a>|<a href="javascript:;">vivo</a>|<a href="javascript:;">SONY</a>|<a href="javascript:;">飞利浦</a>|<a href="javascript:;">nubia</a>
+                                </p>
+                                <p>
+                                    |<a href="javascript:;">诺基亚</a>|<a href="javascript:;">摩托罗拉</a>|<a href="javascript:;">中兴</a>
+                                </p>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt><a href="javascript:;">手机配件</a></dt>
+                            <dd>
+                                <p>
+                                    <a href="javascript:;">手机</a>
+                                    | <a href="javascript:;">老人机</a>
+                                </p>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt><a href="javascript:;">家用电器</a></dt>
+                            <dd>
+                                <p>
+                                    <a href="javascript:;">手机</a>
+                                    | <a href="javascript:;">老人机</a>
+                                </p>
+                            </dd>
+                        </dl>
+                    </div>
+                </li>
+            </ul>
+            <img src="../img/qiang.gif" width="200" height="70">
+        </div>
+        <h2 class="nav-title left">商品分类<b></b></h2>
+        <div class="nav-cen left">
+            <a  class="active" href="javascript:;">首页</a>
+            <a href="javascript:;">团购</a>
+            <a href="javascript:;">手机馆</a>
+            <a href="javascript:;">智能之家</a>
+            <a href="javascript:;">DIY攒积馆</a>
+            <a href="javascript:;">限时抢购</a>
+        </div>
+        <div class="nav-tips right"><a href="javascript:;">畅享优惠 360奇酷 旗舰版 仅售1099元</a></div>
+    </div>
+</div>
+<div id="main">
+    <div class="mt">
+        <div class="index">
+            <div class="top">
+                <div class="title left">
+                   <p> <a href="javascript:;">首页</a> > iphone 7</p>
+                </div>
+                <div class="num right">共<i>16</i>件</div>
+            </div>
+            <div class="bto">
+                <div class="kind">类别:</div>
+                <div class="content">手机</div>
+            </div>
+        </div>
+    </div>
+    <div class="mc">
+        <div class="service">
+            <span>ZOL商城服务保障 :</span>
+           <a href="javascript:;"><img src="../img/fuwubaozhang.png" alt=""></a>
+        </div>
+        <div class="toolbar">
+            <ul class="sort">
+                <li class="current"><a href="javascript:;">默认</a></li>
+                <li><a href="javascript:;">高人气</a></li>
+                <li><a href="javascript:;">高销量</a></li>
+                <li><a href="javascript:;">价格由低到高</a></li>
+                <li><a href="javascript:;">价格由高到低</a></li>
+                <li class="comm-dress">
+                    <span class="delivery-origin">发货地</span>
+                    <div class="commdress-list" style="display:none">
+                        <dl>
+                            <dt>华北</dt>
+                            <ul>
+                                <li><a class="current-city" href="javascript:;">北京</a></li>
+                                <li><a href="javascript:;">天津</a></li>
+                                <li><a href="javascript:;">河北</a></li>
+                                <li><a href="javascript:;">山西</a></li>
+                                <li><a href="javascript:;">内蒙</a></li>
+                                <li><a href="javascript:;">山东</a></li>
+                            </ul>
+                        </dl>
+                        <dl>
+                            <dt>华东</dt>
+                            <ul>
+                                <li><a href="javascript:;">上海</a></li>
+                                <li><a href="javascript:;">江苏</a></li>
+                                <li><a href="javascript:;">浙江</a></li>
+                                <li><a href="javascript:;">安徽</a></li>
+                                <li><a href="javascript:;">江西</a></li>
+                            </ul>
+                        </dl>
+                        <dl>
+                            <dt>华中</dt>
+                            <ul>
+                                <li><a href="javascript:;">河南</a></li>
+                                <li><a href="javascript:;">湖北</a></li>
+                                <li><a href="javascript:;">湖南</a></li>
+                            </ul>
+                        </dl>
+                        <dl>
+                            <dt>华南</dt>
+                            <ul>
+                                <li><a href="javascript:;">福建</a></li>
+                                <li><a href="javascript:;">广东</a></li>
+                                <li><a href="javascript:;">广西</a></li>
+                                <li><a href="javascript:;">海南</a></li>
+                            </ul>
+                        </dl>
+                        <dl>
+                            <dt>华南</dt>
+                            <ul>
+                                <li><a href="javascript:;">福建</a></li>
+                                <li><a href="javascript:;">广东</a></li>
+                                <li><a href="javascript:;">广西</a></li>
+                                <li><a href="javascript:;">海南</a></li>
+                            </ul>
+                        </dl>
+                        <dl>
+                            <dt>东北</dt>
+                            <ul>
+                                <li><a href="javascript:;">辽宁</a></li>
+                                <li><a href="javascript:;">吉林</a></li>
+                                <li><a href="javascript:;">黑龙江</a></li>
+                            </ul>
+                        </dl>
+                        <dl>
+                            <dt>西北</dt>
+                            <ul>
+                                <li><a href="javascript:;">陕西</a></li>
+                                <li><a href="javascript:;">甘肃</a></li>
+                                <li><a href="javascript:;">青海</a></li>
+                                <li><a href="javascript:;">宁夏</a></li>
+                                <li><a href="javascript:;">新疆</a></li>
+                            </ul>
+                        </dl>
+                        <dl>
+                            <dt>西南</dt>
+                            <ul>
+                                <li><a href="javascript:;">重庆</a></li>
+                                <li><a href="javascript:;">四川</a></li>
+                                <li><a href="javascript:;">河北</a></li>
+                                <li><a href="javascript:;">贵州</a></li>
+                                <li><a href="javascript:;">云南</a></li>
+                                <li><a href="javascript:;">西藏</a></li>
+                            </ul>
+                        </dl>
+                    </div>
+                </li>
+                <li class="price-range" >
+                    <div class="inner">
+                        <form name="" class="form">
+                            <input type="text" class="text" name="start-price" value="￥0" maxlength="10"><i> - </i>
+                            <input type="text" class="text" name="end-price" value="￥4" maxlength="10">
+                            <span class="operation" style="display:none;">
+                                <a href="javascript:;" class="confirm">确定</a>
+                                <a href="javascript:;" id="priceCancel">清除</a>
+                            </span>
+                        </form>
+                    </div>
+                </li>
+                <li class="screening">
+                    <div class="list">
+                        <label for="check1"><input type="checkbox" value="1" class="check" id="check1">限时抢购</label>
+                        <label for="check2"><input type="checkbox" value="1" class="check" id="check2">店铺活动</label>
+                    </div>
+                </li>
+            </ul>
+            <div class="mini-page">
+                <em>1/1</em>
+                <span class="no-prev">上一页</span>
+                <span class="no-next">下一页</span>
+            </div>
+        </div>
+    </div>
+    <div class="mcontent">
+        <ul class="goods-list">
+            <li>
+                <p class="attention"><span>关注</span></p>
+                <a class="pic" href="javascript:;"><img src="../img/list1.jpg" alt="新品上市  32GB入网价5988！现货 ！苹果 iPhone 7 Plus（全网通）" width="200" height="200"></a>
+                <div class="title"><a href="javascript:;">
+                    新品上市  32GB入网价5988！现货 ！苹果 iPhone 7 Plus（全网通）
+                </a></div>
+                <div class="price-bar">
+                    <span class="price">￥5288.0</span>
+                    <span class="activity-price" style="display: none;">最多减￥1000</span>
+                </div>
+                <div class="volume">
+                    <span>销售数<em>&nbsp;138</em></span>
+                    <span class="evaluation">评价数 <a href="javascript:;">18</a></span>
+                </div>
+                <div class="shop-infor">
+                    <p class="shop-name"><a href="javascript:;">爱科生活官方旗舰店</a></p>
+                    <p class="total-volume">店铺总成交 <em>3273</em>笔</p>
+                </div>
+            </li>
+            <li>
+                <p class="attention"><span>关注</span></p>
+                <a class="pic" href="javascript:;"><img src="../img/list2.jpg" alt="新品上市  32GB入网价5988！现货 ！苹果 iPhone 7 Plus（全网通）" width="200" height="200"></a>
+                <div class="title"><a href="javascript:;">
+                    新品上市  32GB入网价5988！现货 ！苹果 iPhone 7 Plus（全网通）
+                </a></div>
+                <div class="price-bar">
+                    <span class="price">￥6680.0</span>
+                    <span class="activity-price" style="display: none;">最多减￥1000</span>
+                </div>
+                <div class="volume">
+                    <span>销售数<em>&nbsp;138</em></span>
+                    <span class="evaluation">评价数 <a href="javascript:;">18</a></span>
+                </div>
+                <div class="shop-infor">
+                    <p class="shop-name"><a href="javascript:;">爱科生活官方旗舰店</a></p>
+                    <p class="total-volume">店铺总成交 <em>3273</em>笔</p>
+                </div>
+            </li>
+            <li>
+                <p class="attention"><span>关注</span></p>
+                <a class="pic" href="javascript:;"><img src="../img/list3.jpg" alt="新品上市  32GB入网价5988！现货 ！苹果 iPhone 7 Plus（全网通）" width="200" height="200"></a>
+                <div class="title"><a href="javascript:;">
+                    新品上市  32GB入网价5988！现货 ！苹果 iPhone 7 Plus（全网通）
+                </a></div>
+                <div class="price-bar">
+                    <span class="price">￥6688.0</span>
+                    <span class="activity-price" style="display: none;">最多减￥1000</span>
+                </div>
+                <div class="volume">
+                    <span>销售数<em>&nbsp;138</em></span>
+                    <span class="evaluation">评价数 <a href="javascript:;">18</a></span>
+                </div>
+                <div class="shop-infor">
+                    <p class="shop-name"><a href="javascript:;">爱科生活官方旗舰店</a></p>
+                    <p class="total-volume">店铺总成交 <em>3273</em>笔</p>
+                </div>
+            </li>
+            <li>
+                <p class="attention"><span>关注</span></p>
+                <a class="pic" href="javascript:;"><img src="../img/list4.jpg" alt="新品上市  32GB入网价5988！现货 ！苹果 iPhone 7 Plus（全网通）" width="200" height="200"></a>
+                <div class="title"><a href="javascript:;">
+                    新品上市  32GB入网价5988！现货 ！苹果 iPhone 7 Plus（全网通）
+                </a></div>
+                <div class="price-bar">
+                    <span class="price">￥6600.0</span>
+                    <span class="activity-price" style="display: none;">最多减￥1000</span>
+                </div>
+                <div class="volume">
+                    <span>销售数<em>&nbsp;138</em></span>
+                    <span class="evaluation">评价数 <a href="javascript:;">18</a></span>
+                </div>
+                <div class="shop-infor">
+                    <p class="shop-name"><a href="javascript:;">爱科生活官方旗舰店</a></p>
+                    <p class="total-volume">店铺总成交 <em>3273</em>笔</p>
+                </div>
+            </li>
+            <li>
+                <p class="attention"><span>关注</span></p>
+                <a class="pic" href="javascript:;"><img src="../img/list5.jpg" alt="新品上市  32GB入网价5988！现货 ！苹果 iPhone 7 Plus（全网通）" width="200" height="200"></a>
+                <div class="title"><a href="javascript:;">
+                    新品上市  32GB入网价5988！现货 ！苹果 iPhone 7 Plus（全网通）
+                </a></div>
+                <div class="price-bar">
+                    <span class="price">￥5000.0</span>
+                    <span class="activity-price" style="display: none;">最多减￥1000</span>
+                </div>
+                <div class="volume">
+                    <span>销售数<em>&nbsp;138</em></span>
+                    <span class="evaluation">评价数 <a href="javascript:;">18</a></span>
+                </div>
+                <div class="shop-infor">
+                    <p class="shop-name"><a href="javascript:;">爱科生活官方旗舰店</a></p>
+                    <p class="total-volume">店铺总成交 <em>3273</em>笔</p>
+                </div>
+            </li>
+            <li>
+                <p class="attention"><span>关注</span></p>
+                <a class="pic" href="javascript:;"><img src="../img/list6.jpg" alt="新品上市  32GB入网价5988！现货 ！苹果 iPhone 7 Plus（全网通）" width="200" height="200"></a>
+                <div class="title"><a href="javascript:;">
+                    新品上市  32GB入网价5988！现货 ！苹果 iPhone 7 Plus（全网通）
+                </a></div>
+                <div class="price-bar">
+                    <span class="price">￥6000.0</span>
+                    <span class="activity-price" style="display: none;">最多减￥1000</span>
+                </div>
+                <div class="volume">
+                    <span>销售数<em>&nbsp;138</em></span>
+                    <span class="evaluation">评价数 <a href="javascript:;">18</a></span>
+                </div>
+                <div class="shop-infor">
+                    <p class="shop-name"><a href="javascript:;">爱科生活官方旗舰店</a></p>
+                    <p class="total-volume">店铺总成交 <em>3273</em>笔</p>
+                </div>
+            </li>
+            <li>
+                <p class="attention"><span>关注</span></p>
+                <a class="pic" href="javascript:;"><img src="../img/list7.png" alt="新品上市  32GB入网价5988！现货 ！苹果 iPhone 7 Plus（全网通）" width="200" height="200"></a>
+                <div class="title"><a href="javascript:;">
+                    新品上市  32GB入网价5988！现货 ！苹果 iPhone 7 Plus（全网通）
+                </a></div>
+                <div class="price-bar">
+                    <span class="price">￥6608.0</span>
+                    <span class="activity-price" style="display: none;">最多减￥1000</span>
+                </div>
+                <div class="volume">
+                    <span>销售数<em>&nbsp;138</em></span>
+                    <span class="evaluation">评价数 <a href="javascript:;">18</a></span>
+                </div>
+                <div class="shop-infor">
+                    <p class="shop-name"><a href="javascript:;">爱科生活官方旗舰店</a></p>
+                    <p class="total-volume">店铺总成交 <em>3273</em>笔</p>
+                </div>
+            </li>
+            <li>
+                <p class="attention"><span>关注</span></p>
+                <a class="pic" href="javascript:;"><img src="../img/list8.jpg" alt="新品上市  32GB入网价5988！现货 ！苹果 iPhone 7 Plus（全网通）" width="200" height="200"></a>
+                <div class="title"><a href="javascript:;">
+                    新品上市  32GB入网价5988！现货 ！苹果 iPhone 7 Plus（全网通）
+                </a></div>
+                <div class="price-bar">
+                    <span class="price">￥6500.0</span>
+                    <span class="activity-price" style="display: none;">最多减￥1000</span>
+                </div>
+                <div class="volume">
+                    <span>销售数<em>&nbsp;138</em></span>
+                    <span class="evaluation">评价数 <a href="javascript:;">18</a></span>
+                </div>
+                <div class="shop-infor">
+                    <p class="shop-name"><a href="javascript:;">爱科生活官方旗舰店</a></p>
+                    <p class="total-volume">店铺总成交 <em>3273</em>笔</p>
+                </div>
+            </li>
+            <li>
+                <p class="attention"><span>关注</span></p>
+                <a class="pic" href="javascript:;"><img src="../img/list9.jpg" alt="新品上市  32GB入网价5988！现货 ！苹果 iPhone 7 Plus（全网通）" width="200" height="200"></a>
+                <div class="title"><a href="javascript:;">
+                    新品上市  32GB入网价5988！现货 ！苹果 iPhone 7 Plus（全网通）
+                </a></div>
+                <div class="price-bar">
+                    <span class="price">￥5600.0</span>
+                    <span class="activity-price" style="display: none;">最多减￥1000</span>
+                </div>
+                <div class="volume">
+                    <span>销售数<em>&nbsp;138</em></span>
+                    <span class="evaluation">评价数 <a href="javascript:;">18</a></span>
+                </div>
+                <div class="shop-infor">
+                    <p class="shop-name"><a href="javascript:;">爱科生活官方旗舰店</a></p>
+                    <p class="total-volume">店铺总成交 <em>3273</em>笔</p>
+                </div>
+            </li>
+            <li>
+                <p class="attention"><span>关注</span></p>
+                <a class="pic" href="javascript:;"><img src="../img/list10.jpg" alt="新品上市  32GB入网价5988！现货 ！苹果 iPhone 7 Plus（全网通）" width="200" height="200"></a>
+                <div class="title"><a href="javascript:;">
+                    新品上市  32GB入网价5988！现货 ！苹果 iPhone 7 Plus（全网通）
+                </a></div>
+                <div class="price-bar">
+                    <span class="price">￥5800.0</span>
+                    <span class="activity-price" style="display: none;">最多减￥1000</span>
+                </div>
+                <div class="volume">
+                    <span>销售数<em>&nbsp;138</em></span>
+                    <span class="evaluation">评价数 <a href="javascript:;">18</a></span>
+                </div>
+                <div class="shop-infor">
+                    <p class="shop-name"><a href="javascript:;">爱科生活官方旗舰店</a></p>
+                    <p class="total-volume">店铺总成交 <em>3273</em>笔</p>
+                </div>
+            </li>
+            <li>
+                <p class="attention"><span>关注</span></p>
+                <a class="pic" href="javascript:;"><img src="../img/list11.jpg" alt="新品上市  32GB入网价5988！现货 ！苹果 iPhone 7 Plus（全网通）" width="200" height="200"></a>
+                <div class="title"><a href="javascript:;">
+                    新品上市  32GB入网价5988！现货 ！苹果 iPhone 7 Plus（全网通）
+                </a></div>
+                <div class="price-bar">
+                    <span class="price">￥8500.0</span>
+                    <span class="activity-price" style="display: none;">最多减￥1000</span>
+                </div>
+                <div class="volume">
+                    <span>销售数<em>&nbsp;138</em></span>
+                    <span class="evaluation">评价数 <a href="javascript:;">18</a></span>
+                </div>
+                <div class="shop-infor">
+                    <p class="shop-name"><a href="javascript:;">爱科生活官方旗舰店</a></p>
+                    <p class="total-volume">店铺总成交 <em>3273</em>笔</p>
+                </div>
+            </li>
+            <li>
+                <p class="attention"><span>关注</span></p>
+                <a class="pic" href="javascript:;"><img src="../img/list12.jpg" alt="新品上市  32GB入网价5988！现货 ！苹果 iPhone 7 Plus（全网通）" width="200" height="200"></a>
+                <div class="title"><a href="javascript:;">
+                    新品上市  32GB入网价5988！现货 ！苹果 iPhone 7 Plus（全网通）
+                </a></div>
+                <div class="price-bar">
+                    <span class="price">￥8800.0</span>
+                    <span class="activity-price" style="display: none;">最多减￥1000</span>
+                </div>
+                <div class="volume">
+                    <span>销售数<em>&nbsp;138</em></span>
+                    <span class="evaluation">评价数 <a href="javascript:;">18</a></span>
+                </div>
+                <div class="shop-infor">
+                    <p class="shop-name"><a href="javascript:;">爱科生活官方旗舰店</a></p>
+                    <p class="total-volume">店铺总成交 <em>3273</em>笔</p>
+                </div>
+            </li>
+            <li>
+            <p class="attention"><span>关注</span></p>
+            <a class="pic" href="javascript:;"><img src="../img/list13.jpg" alt="新品上市  32GB入网价5988！现货 ！苹果 iPhone 7 Plus（全网通）" width="200" height="200"></a>
+            <div class="title"><a href="javascript:;">
+                新品上市  32GB入网价5988！现货 ！苹果 iPhone 7 Plus（全网通）
+            </a></div>
+            <div class="price-bar">
+                <span class="price">￥8888.0</span>
+                <span class="activity-price" style="display: none;">最多减￥1000</span>
+            </div>
+            <div class="volume">
+                <span>销售数<em>&nbsp;138</em></span>
+                <span class="evaluation">评价数 <a href="javascript:;">18</a></span>
+            </div>
+            <div class="shop-infor">
+                <p class="shop-name"><a href="javascript:;">爱科生活官方旗舰店</a></p>
+                <p class="total-volume">店铺总成交 <em>3273</em>笔</p>
+            </div>
+        </li>
+            <li>
+                <p class="attention"><span>关注</span></p>
+                <a class="pic" href="javascript:;"><img src="../img/list14.jpg" alt="新品上市  32GB入网价5988！现货 ！苹果 iPhone 7 Plus（全网通）" width="200" height="200"></a>
+                <div class="title"><a href="javascript:;">
+                    新品上市  32GB入网价5988！现货 ！苹果 iPhone 7 Plus（全网通）
+                </a></div>
+                <div class="price-bar">
+                    <span class="price">￥6688.0</span>
+                    <span class="activity-price" style="display: none;">最多减￥1000</span>
+                </div>
+                <div class="volume">
+                    <span>销售数<em>&nbsp;138</em></span>
+                    <span class="evaluation">评价数 <a href="javascript:;">18</a></span>
+                </div>
+                <div class="shop-infor">
+                    <p class="shop-name"><a href="javascript:;">爱科生活官方旗舰店</a></p>
+                    <p class="total-volume">店铺总成交 <em>3273</em>笔</p>
+                </div>
+            </li>
+            <li>
+                <p class="attention"><span>关注</span></p>
+                <a class="pic" href="javascript:;"><img src="../img/list15.jpg" alt="新品上市  32GB入网价5988！现货 ！苹果 iPhone 7 Plus（全网通）" width="200" height="200"></a>
+                <div class="title"><a href="javascript:;">
+                    新品上市  32GB入网价5988！现货 ！苹果 iPhone 7 Plus（全网通）
+                </a></div>
+                <div class="price-bar">
+                    <span class="price">￥6666.0</span>
+                    <span class="activity-price" style="display: none;">最多减￥1000</span>
+                </div>
+                <div class="volume">
+                    <span>销售数<em>&nbsp;138</em></span>
+                    <span class="evaluation">评价数 <a href="javascript:;">18</a></span>
+                </div>
+                <div class="shop-infor">
+                    <p class="shop-name"><a href="javascript:;">爱科生活官方旗舰店</a></p>
+                    <p class="total-volume">店铺总成交 <em>3273</em>笔</p>
+                </div>
+            </li>
+            <li>
+                <p class="attention"><span>关注</span></p>
+                <a class="pic" href="javascript:;"><img src="../img/list16.jpg" alt="新品上市  32GB入网价5988！现货 ！苹果 iPhone 7 Plus（全网通）" width="200" height="200"></a>
+                <div class="title"><a href="javascript:;">
+                    新品上市  32GB入网价5988！现货 ！苹果 iPhone 7 Plus（全网通）
+                </a></div>
+                <div class="price-bar">
+                    <span class="price">￥6686.0</span>
+                    <span class="activity-price" style="display: none;">最多减￥1000</span>
+                </div>
+                <div class="volume">
+                    <span>销售数<em>&nbsp;138</em></span>
+                    <span class="evaluation">评价数 <a href="javascript:;">18</a></span>
+                </div>
+                <div class="shop-infor">
+                    <p class="shop-name"><a href="javascript:;">爱科生活官方旗舰店</a></p>
+                    <p class="total-volume">店铺总成交 <em>3273</em>笔</p>
+                </div>
+            </li>
+            <li>
+                <p class="attention"><span>关注</span></p>
+                <a class="pic" href="javascript:;"><img src="../img/list17.png" alt="新品上市  32GB入网价5988！现货 ！苹果 iPhone 7 Plus（全网通）" width="200" height="200"></a>
+                <div class="title"><a href="javascript:;">
+                    新品上市  32GB入网价5988！现货 ！苹果 iPhone 7 Plus（全网通）
+                </a></div>
+                <div class="price-bar">
+                    <span class="price">￥6668.0</span>
+                    <span class="activity-price" style="display: none;">最多减￥1000</span>
+                </div>
+                <div class="volume">
+                    <span>销售数<em>&nbsp;138</em></span>
+                    <span class="evaluation">评价数 <a href="javascript:;">18</a></span>
+                </div>
+                <div class="shop-infor">
+                    <p class="shop-name"><a href="javascript:;">爱科生活官方旗舰店</a></p>
+                    <p class="total-volume">店铺总成交 <em>3273</em>笔</p>
+                </div>
+            </li>
+            <li>
+                <p class="attention"><span>关注</span></p>
+                <a class="pic" href="javascript:;"><img src="../img/list18.png" alt="新品上市  32GB入网价5988！现货 ！苹果 iPhone 7 Plus（全网通）" width="200" height="200"></a>
+                <div class="title"><a href="javascript:;">
+                    新品上市  32GB入网价5988！现货 ！苹果 iPhone 7 Plus（全网通）
+                </a></div>
+                <div class="price-bar">
+                    <span class="price">￥9500.0</span>
+                    <span class="activity-price" style="display: none;">最多减￥1000</span>
+                </div>
+                <div class="volume">
+                    <span>销售数<em>&nbsp;138</em></span>
+                    <span class="evaluation">评价数 <a href="javascript:;">18</a></span>
+                </div>
+                <div class="shop-infor">
+                    <p class="shop-name"><a href="javascript:;">爱科生活官方旗舰店</a></p>
+                    <p class="total-volume">店铺总成交 <em>3273</em>笔</p>
+                </div>
+            </li>
+            <li>
+                <p class="attention"><span>关注</span></p>
+                <a class="pic" href="javascript:;"><img src="../img/list19.png" alt="新品上市  32GB入网价5988！现货 ！苹果 iPhone 7 Plus（全网通）" width="200" height="200"></a>
+                <div class="title"><a href="javascript:;">
+                    新品上市  32GB入网价5988！现货 ！苹果 iPhone 7 Plus（全网通）
+                </a></div>
+                <div class="price-bar">
+                    <span class="price">￥9800.0</span>
+                    <span class="activity-price" style="display: none;">最多减￥1000</span>
+                </div>
+                <div class="volume">
+                    <span>销售数<em>&nbsp;138</em></span>
+                    <span class="evaluation">评价数 <a href="javascript:;">18</a></span>
+                </div>
+                <div class="shop-infor">
+                    <p class="shop-name"><a href="javascript:;">爱科生活官方旗舰店</a></p>
+                    <p class="total-volume">店铺总成交 <em>3273</em>笔</p>
+                </div>
+            </li>
+            <li>
+                <p class="attention"><span>关注</span></p>
+                <a class="pic" href="javascript:;"><img src="../img/list20.jpg" alt="新品上市  32GB入网价5988！现货 ！苹果 iPhone 7 Plus（全网通）" width="200" height="200"></a>
+                <div class="title"><a href="javascript:;">
+                    新品上市  32GB入网价5988！现货 ！苹果 iPhone 7 Plus（全网通）
+                </a></div>
+                <div class="price-bar">
+                    <span class="price">￥1800.0</span>
+                    <span class="activity-price" style="display: none;">最多减￥1000</span>
+                </div>
+                <div class="volume">
+                    <span>销售数<em>&nbsp;138</em></span>
+                    <span class="evaluation">评价数 <a href="javascript:;">18</a></span>
+                </div>
+                <div class="shop-infor">
+                    <p class="shop-name"><a href="javascript:;">爱科生活官方旗舰店</a></p>
+                    <p class="total-volume">店铺总成交 <em>3273</em>笔</p>
+                </div>
+            </li>
+            <li>
+                <p class="attention"><span>关注</span></p>
+                <a class="pic" href="javascript:;"><img src="../img/list21.jpg" alt="新品上市  32GB入网价5988！现货 ！苹果 iPhone 7 Plus（全网通）" width="200" height="200"></a>
+                <div class="title"><a href="javascript:;">
+                    新品上市  32GB入网价5988！现货 ！苹果 iPhone 7 Plus（全网通）
+                </a></div>
+                <div class="price-bar">
+                    <span class="price">￥6088.0</span>
+                    <span class="activity-price" style="display: none;">最多减￥1000</span>
+                </div>
+                <div class="volume">
+                    <span>销售数<em>&nbsp;138</em></span>
+                    <span class="evaluation">评价数 <a href="javascript:;">18</a></span>
+                </div>
+                <div class="shop-infor">
+                    <p class="shop-name"><a href="javascript:;">爱科生活官方旗舰店</a></p>
+                    <p class="total-volume">店铺总成交 <em>3273</em>笔</p>
+                </div>
+            </li>
+            <li>
+                <p class="attention"><span>关注</span></p>
+                <a class="pic" href="javascript:;"><img src="../img/list22.jpg" alt="新品上市  32GB入网价5988！现货 ！苹果 iPhone 7 Plus（全网通）" width="200" height="200"></a>
+                <div class="title"><a href="javascript:;">
+                    新品上市  32GB入网价5988！现货 ！苹果 iPhone 7 Plus（全网通）
+                </a></div>
+                <div class="price-bar">
+                    <span class="price">￥6600.0</span>
+                    <span class="activity-price" style="display: none;">最多减￥1000</span>
+                </div>
+                <div class="volume">
+                    <span>销售数<em>&nbsp;138</em></span>
+                    <span class="evaluation">评价数 <a href="javascript:;">18</a></span>
+                </div>
+                <div class="shop-infor">
+                    <p class="shop-name"><a href="javascript:;">爱科生活官方旗舰店</a></p>
+                    <p class="total-volume">店铺总成交 <em>3273</em>笔</p>
+                </div>
+            </li>
+            <li>
+            <p class="attention"><span>关注</span></p>
+            <a class="pic" href="javascript:;"><img src="../img/list23.jpg" alt="新品上市  32GB入网价5988！现货 ！苹果 iPhone 7 Plus（全网通）" width="200" height="200"></a>
+            <div class="title"><a href="javascript:;">
+                新品上市  32GB入网价5988！现货 ！苹果 iPhone 7 Plus（全网通）
+            </a></div>
+            <div class="price-bar">
+                <span class="price">￥6699.0</span>
+                <span class="activity-price" style="display: none;">最多减￥1000</span>
+            </div>
+            <div class="volume">
+                <span>销售数<em>&nbsp;138</em></span>
+                <span class="evaluation">评价数 <a href="javascript:;">18</a></span>
+            </div>
+            <div class="shop-infor">
+                <p class="shop-name"><a href="javascript:;">爱科生活官方旗舰店</a></p>
+                <p class="total-volume">店铺总成交 <em>3273</em>笔</p>
+            </div>
+        </li>
+            <li>
+                <p class="attention"><span>关注</span></p>
+                <a class="pic" href="javascript:;"><img src="../img/list24.jpg" alt="新品上市  32GB入网价5988！现货 ！苹果 iPhone 7 Plus（全网通）" width="200" height="200"></a>
+                <div class="title"><a href="javascript:;">
+                    新品上市  32GB入网价5988！现货 ！苹果 iPhone 7 Plus（全网通）
+                </a></div>
+                <div class="price-bar">
+                    <span class="price">￥6666.0</span>
+                    <span class="activity-price" style="display: none;">最多减￥1000</span>
+                </div>
+                <div class="volume">
+                    <span>销售数<em>&nbsp;138</em></span>
+                    <span class="evaluation">评价数 <a href="javascript:;">18</a></span>
+                </div>
+                <div class="shop-infor">
+                    <p class="shop-name"><a href="javascript:;">爱科生活官方旗舰店</a></p>
+                    <p class="total-volume">店铺总成交 <em>3273</em>笔</p>
+                </div>
+            </li>
+            <li>
+            <p class="attention"><span>关注</span></p>
+            <a class="pic" href="javascript:;"><img src="../img/list25.gif" alt="新品上市  32GB入网价5988！现货 ！苹果 iPhone 7 Plus（全网通）" width="200" height="200"></a>
+            <div class="title"><a href="javascript:;">
+                新品上市  32GB入网价5988！现货 ！苹果 iPhone 7 Plus（全网通）
+            </a></div>
+            <div class="price-bar">
+                <span class="price">￥6589.0</span>
+                <span class="activity-price" style="display: none;">最多减￥1000</span>
+            </div>
+            <div class="volume">
+                <span>销售数<em>&nbsp;138</em></span>
+                <span class="evaluation">评价数 <a href="javascript:;">18</a></span>
+            </div>
+            <div class="shop-infor">
+                <p class="shop-name"><a href="javascript:;">爱科生活官方旗舰店</a></p>
+                <p class="total-volume">店铺总成交 <em>3273</em>笔</p>
+            </div>
+        </li>
+        </ul>
+    </div>
+</div>
+<div id="active">
+    <div class="act">
+        <div class="line"><p><span>正在进行中的活动</span></p></div>
+        <div class="boximg">
+            <a href="javascript:;"><img src="../img/active1.jpg"></a><a href="javascript:;"><img src="../img/active2.jpg"></a><a href="javascript:;"><img src="../img/active3.jpg"></a><a class="last" href="javascript:;"><img src="../img/active4.jpg"></a>
+        </div>
+        <div class="sea">
+            <form class="searchform" action="" method="get" style="clear: both;">
+                <input type="text" name="keyword" class="text" autocomplete="off" value="">
+                <input type="submit" value="搜索" class="btn">
+            </form>
+        </div>
+    </div>
+</div>
+<div id="footer">
+    <div class="foot">
+        <div class="service">
+            <a href="javascript:;"><img src="../img/baozhang1.png"></a>
+        </div>
+        <div class="relate">
+            <dl class="cooperation">
+                <dt>商家合作</dt>
+                <dd>
+                    <p>错过天猫？别再错过我们！</p>
+                    <p>ZOL商城开启全新旅程！</p>
+                    <a class="btn" href="javascript:;">关于入驻 ></a>
+                </dd>
+            </dl>
+            <dl class="hotline">
+                <dt>工作日 9:00 - 18:00</dt>
+                <dd>
+                    <p>错过天猫？别再错过我们！</p>
+                    <a class="weibo" href="javascript:;">关注新浪微博</a>
+                </dd>
+            </dl>
+            <dl>
+                <dt>购物指南</dt>
+                <dd>
+                    <p>账号注册</p>
+                    <p>账号注册</p>
+                    <p>账号注册</p>
+                </dd>
+            </dl>
+            <dl>
+                <dt>售后服务</dt>
+                <dd>
+                    <p>先行赔付</p>
+                    <p>账号注册</p>
+                    <p>退款退货流程</p>
+                </dd>
+            </dl>
+            <dl>
+                <dt>商城保障</dt>
+                <dd>
+                    <p>行货保障</p>
+                    <p>如实描述</p>
+                    <p>物流配送</p>
+                    <p>行货保障</p>
+                    <p>48小时发货</p>
+                    <p>物流配送</p>
+                </dd>
+            </dl>
+            <dl>
+                <dt>商家服务</dt>
+                <dd>
+                    <p>商家中心</p>
+                    <p>商城规则</p>
+                    <p>商家帮助</p>
+                </dd>
+            </dl>
+        </div>
+    </div>
+    <div class="foot-nav">
+        <div class="partner">
+            <span>合作伙伴：</span>
+            <p>
+                <a href="javascript:;">电子商务平台</a> | <a href="javascript:;">电子商务</a> | <a href="javascript:;">电子商务平</a> |<a href="javascript:;">电子商务平台</a> |<a href="javascript:;">电子商务平台</a> |<a href="javascript:;">电子商</a> |<a href="javascript:;">电子商务平台</a> |<a href="javascript:;">电子商务</a> |<a href="javascript:;">电子商</a> |<a href="javascript:;">电子商</a> |<a href="javascript:;">电子商务平</a> |<a href="javascript:;">电子商务平台</a> |<a href="javascript:;">电子商务平</a> |<a href="javascript:;">电子商务平</a> |<a href="javascript:;">电子商务平</a>  |<a href="javascript:;">电子商务平</a>
+            </p>
+        </div>
+        <div class="foot-online">
+            <p>
+                <a class="first" href="javascript:;">中关村在线</a>|<a href="javascript:;">ZOL商城</a>|<a href="javascript:;">团购</a>|<a href="javascript:;">限时抢购</a>|<a href="javascript:;">经销商|产品报价</a>|<a href="javascript:;">论坛</a>|<a href="javascript:;">问答</a>
+            </p>
+        </div>
+        <div class="copyright">
+            <a class="first" href="javascript:;">关于ZOL商城</a>|<a href="javascript:;">关于ZOL商城</a>|<a href="javascript:;">关于ZOL商城</a>|<a href="javascript:;">关于ZOL商城</a>|<a href="javascript:;">关于ZOL商城</a>
+        </div>
+        <div class="copyright">
+            <span> @2016中关村在线 版权所有. 京ICP证150096号</span><span> @2016中关村在线 版权所有. 京ICP证150096号</span><span> @2016中关村在线 版权所有. 京ICP证150096号</span>
+        </div>
+    </div>
+</div>
+<div id="side">
+    <div class="topbar">
+        <div class="order">
+            <em>我的订单</em>
+            <div class="tab-ico"></div>
+
+        </div>
+        <div class="footprint">
+            <em>我的足迹</em>
+            <div class="tab-ico"></div>
+
+        </div>
+        <div class="cart">
+            <em>购物车</em>
+            <div class="tab-ico"></div>
+            <span class="number">0</span>
+        </div>
+        <div class="coupons">
+            <div class="xhd"></div>
+            <em>优惠券</em>
+            <div class="tab-ico"></div>
+        </div>
+    </div>
+    <div class="btobar">
+        <div class="region">
+            <a class="feedback" href="javascript:;">建议反馈</a>
+            <a class="getback tab-ico" href="javascript:;"></a>
+        </div>
+
+    </div>
+</div>
+<a id="research" href="javascript:;"><img src="../img/survey_ico.png"></a>
+<div id="box">
+    <div class="login">
+        <h3>登录ZOL商城<i></i></h3>
+        <div class="m">
+            <p>账号登录</p>
+            <input class="text" type="text" value="手机号/邮箱/用户名" autocomplete="off">
+            <input class="text" type="password" placeholder="密码" autocomplete="off">
+            <p class="pass"><input class="check" type="checkbox">记住登录状态<a class="forget" href="javascript:;">忘记密码？</a></p>
+            <input class="btn" type="button" value="登录">
+            <p class="log"><a href="login.html">立即注册</a></p>
+        </div>
+        <p class="cooper"><span>合作账号登录:</span><a class="weibo" href="javascript:;"></a><a class="qq" href="javascript:;"></a><a class="zhifu" href="javascript:;"></a><a class="baidu" href="javascript:;"></a></p>
+    </div>
+</div>
+<div id="all"></div>
+</body>
+</html>

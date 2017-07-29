@@ -1,0 +1,278 @@
+body,h1,h2,h3,h4,h5,h6,dl,dt,dd,ul,ol,li,th,td,p,blockquote,pre,form,fieldset,legend,input,button,textarea,hr {
+    margin:0;padding:0;
+}
+i{
+    font-style: normal;
+}
+.clear:after{
+    content: ".";
+    display: block;
+    visibility: hidden;
+    clear: both;
+    height: 0;
+    font-size: 0;
+    overflow:hidden;
+}
+body{
+    font: 12px/1.5 Arial;
+    color: #333;
+    min-width:980px;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+img{
+    border:0;
+}
+#header{
+    width:100%;
+    overflow:hidden;
+}
+#header .head{
+    width:990px;
+    margin:0 auto;
+    padding:20px 0;
+    overflow:hidden;
+}
+.head .logo a {
+    float: left;
+}
+.head .logo a img{
+    float: left;
+}
+a {
+    color: #134ba0;
+}
+
+.head .logo p {
+    float: left;
+    margin: 8px 0 0 8px;
+    padding-left: 10px;
+    font: 14px/44px simsun;
+    color: #666;
+    border-left: 1px solid #e6e6e6;
+    cursor: pointer;
+}
+.head .log {
+    float: right;
+    padding: 21px 0 0;
+    font-size: 14px;
+    line-height: 22px;
+}
+.head .log span{
+    float: left;
+    margin-right:5px;
+}
+.head .log a{
+    float:left;
+    padding:0 5px 0 5px;
+    color:#c00;
+}
+.head .log a:hover{
+    color:#fff;
+    background:#cd1f1f;
+}
+
+#wrapper{
+    width:100%;
+    overflow:hidden;
+}
+.wrap{
+    width:980px;
+    height:auto;
+    margin:0 auto;
+    border:1px solid #ccc;
+    overflow:hidden;
+}
+.wrap img{
+    vertical-align: bottom;
+}
+.left{
+    float:left;
+}
+.right{
+    float:right;
+}
+.register{
+    padding: 0 85px 0 0;
+    width: 290px;
+}
+.register h3{
+    position: relative;
+    padding:20px 0 0 15px;
+    color:#666;
+    height: 28px;
+    overflow: hidden;
+    font: 18px/28px "Microsoft YaHei", "\5FAE\8F6F\96C5\9ED1";
+}
+.register h3 a{
+    float: right;
+    padding: 0 0 0 17px;
+    font-size:12px;
+    background: url(../img/shop_login_bg.png) no-repeat -278px -112px;
+    color: #333;
+}
+.register h3 a:hover{
+   color:#f33;
+    text-decoration:underline;
+}
+.register .m{
+    padding:20px 20px 0 20px;
+    position: relative;
+}
+.register .m .wrong{
+    position: absolute;
+    top: 1px;
+    left: 20px;
+    padding: 0 0 0 25px;
+    width: 263px;
+    height: 22px;
+    font: 12px/22px "Arial";
+    color: #f33;
+    border: 1px solid #f99;
+    background:#fff url(../img/bg.png) no-repeat -270px -89px;
+}
+.register .m .text{
+    width:283px;
+    height:38px;
+    padding-left:5px;
+    line-height:38px;
+    font-size:14px;
+    color:#ccc;
+    outline: none;
+    border:1px solid #ccc;
+    margin-top:10px;
+}
+.m .pass{
+    width:100%;
+    overflow:hidden;
+    padding-top:10px;
+}
+.m .check{
+    display:block;
+    float: left;
+    margin:5px 10px 0 0;
+}
+.log a,.pass a{
+    float:right;
+    display: block;
+}
+.pass a:hover{
+    color:#f33;
+    text-decoration: underline;
+}
+.m .forget{
+    text-align: right;
+}
+.register input{
+    border:none 0;
+    outline: 0 none;
+}
+.register .m .btn{
+    width:290px;
+    height:40px;
+    font-size:14px;
+    color:#fff;
+    background:url(../img/shop_login_bg.png) no-repeat 0 0;
+    margin:20px 0 13px 0;
+    border:none;
+}
+.register .m .btn:hover{
+    background-position: 0 -41px;
+}
+.cooper{
+    line-height:40px;
+    padding:20px 0 0 20px;
+    margin:30px 0 0 15px;
+    border-top:1px solid #ccc;
+    width:290px;
+    text-align:center;
+    position: relative;
+}
+.cooper a{
+    display: inline-block;
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    margin-right:12px;
+}
+.cooper span{
+    position: absolute;
+    background:#fff;
+    left:100px;
+    padding:0 5px;
+    top:-20px;
+    display: block;
+    float: left;
+    margin-right:10px;
+}
+.m .log{
+    width:100%;
+    overflow:hidden;
+}
+.cooper .weibo,.cooper .qq,.cooper .zhifu,.cooper .baidu{
+    background-image:url(../img/shop_login_bg.png);
+    background-repeat:no-repeat;
+}
+.cooper .weixin{
+    background: url(../img/bgs2.png) no-repeat 0 2px;
+}
+.cooper .weixin:hover{
+    background-position:0 -39px;
+}
+.cooper .weibo{
+    background-position: -0 -81px;
+}
+.cooper .weibo:hover{
+    background-position: -0 -121px;
+}
+.cooper .qq{
+    background-position: -38px -81px;
+}
+.cooper .qq:hover{
+    background-position: -38px -121px;
+}
+.cooper .zhifu{
+    background-position: -77px -81px;
+}
+.cooper .zhifu:hover{
+    background-position: -77px -121px;
+}
+.cooper .baidu{
+    background-position:-116px -81px;
+}
+.cooper .baidu:hover{
+    background-position:-116px -121px;
+}
+
+#footer{
+    margin-top:50px;
+    width:100%;
+    height:auto;
+    overflow:hidden;
+    border-top:1px solid #ccc;
+}
+#footer .foot{
+    width: 980px;
+    margin:0 auto;
+    height:50px;
+    padding-top:10px;
+}
+.foot .l{
+    color:#ccc;
+    float: left;
+}
+.foot .l a{
+    padding:0 10px;
+    color:#666;
+}
+.foot .l a:hover{
+    color:#f00;
+    text-decoration: underline;
+}
+.foot .r{
+    float:right;
+}

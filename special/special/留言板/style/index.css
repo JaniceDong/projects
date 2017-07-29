@@ -1,0 +1,65 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+}
+#list li{
+	padding: 6px 4px;
+	border-bottom: 1px dashed #ccc;
+}
+#list a{
+	float: right;
+	color: red;
+	font-weight: bold;
+}
+#add-message {
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	/*margin-left: -200px;
+	margin-top: -*/
+	width: 400px;
+	background: #ccc;
+	transform:translate(-50%, -50%);
+}
+#close {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	font-size: 24px;
+	cursor: pointer;
+}
+#add-message h3 {
+	padding: 14px 0;
+	text-align: center;
+	border-bottom: 1px solid #eee;
+}
+#add-message form {
+	padding: 0 8px;
+	overflow: hidden;
+}
+#add-message div{
+	margin: 10px 0;
+}
+#add-message input[name=username] {
+	padding: 0 4px;
+	width: 300px;
+	height: 32px;
+	border: none;
+	outline: none;
+}
+#add-message textarea {
+	padding: 4px;
+	width: 300px;
+	height: 200px;
+	border: none;
+	outline: none;
+	vertical-align: middle;
+	resize: vertical;
+}
+
+#add-message input[type=submit] {
+	float: right;
+}

@@ -1,0 +1,341 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body,html{
+    width:100%;
+    height:100%;
+    font-size:14px;
+    font-family:Helvetica,sans-serif;
+}
+ul li{
+    list-style:none;
+}
+a{
+    text-decoration:none;
+}
+@font-face {font-family: 'iconfont';
+    src: url('../font/iconfont.eot'); /* IE9*/
+    src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../font/iconfont.woff') format('woff'), /* chrome、firefox */
+    url('../font/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('../font/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+.iconfont{
+    font-family:"iconfont" !important;
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+.container{
+
+    height:100%;
+}
+header{
+    position: relative;
+    color:#fff;
+}
+header nav{
+    width:100%;
+    background:linear-gradient(180deg,rgba(0,0,0,.5) 5%,rgba(255,255,255,0));
+    overflow:hidden;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index:100;
+}
+header nav ul{
+    height:45px;
+    padding:3px 0 0 0;
+    line-height:48px;
+    display:flex;
+}
+header nav ul li{
+    display:flex;
+    align-items:center;
+}
+header nav ul li:first-child{
+    padding:0 15px 0 15px;
+}
+header nav ul li:first-child .iconfont{
+    font-size:24px;
+    color:rgba(255,255,255,.5);
+}
+header nav ul li:last-child{
+    padding:0 15px 0 15px;
+}
+header nav ul .search{
+    flex:1;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+header nav ul .search form{
+    width:100%;
+    overflow:hidden;
+    display:flex;
+}
+header nav ul .search form input{
+    outline:none;
+    border:none 0;
+    width:100%;
+    background:rgba(255,255,255,.8);
+    border-radius:5px;
+    padding:10px;
+}
+header nav ul .search .iconfont{
+    position: absolute;
+    right:10px;
+    top:-5px;
+    font-size:20px;
+    color:#CCCCCC;
+}
+header section{
+    width:100%;
+    height:100%;
+    position: relative;
+}
+header section ul{
+    width:100%;
+    height:100%;
+    overflow:hidden;
+}
+header section ul li{
+    width:100%;
+    overflow:hidden;
+    position: absolute;
+    opacity:0;
+    display:none;
+}
+header section ul li a{
+    display:inline-block;
+    width:100%;
+}
+header section ul .active{
+    opacity:1;
+    display:block;
+}
+header section ul li img{
+    width:100%;
+    border:0;
+    vertical-align:bottom;
+}
+header aside{
+    overflow:hidden;
+    position: absolute;
+    bottom:10px;
+    left:50%;
+    transform:translate(-50%);
+}
+header aside a{
+    display:inline-block;
+    width:10px;
+    height:10px;
+    border-radius:50%;
+    margin-right:5px;
+    background:rgba(0,0,0,.5);
+}
+header aside .hover{
+    background:rgba(255,0,0,.5);
+}
+#wrap{
+    overflow:hidden;
+}
+#wrap .wrapper{
+   display:flex;
+   flex-wrap:wrap;
+}
+#wrap ul{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    margin-top:3px;
+}
+#wrap ul li{
+    width:15%;
+    overflow:hidden;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    margin:4px;
+}
+#wrap ul li img{
+    width:100%;
+    vertical-align: middle;
+    padding:3px 10px 5px;
+}
+#wrap ul li span{
+    font-size:0.5rem;
+    line-height:normal;
+}
+footer{
+    margin-top:10px;
+    border-top:2px solid #000;
+    height:100px;
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer p{
+    width:100%;
+    display:flex;
+    padding:15px 30px 0 30px;
+    justify-content: space-around;
+    color:#ccc;
+    font-size:12px;
+}
+footer p a{
+    display:block;
+    text-align:center;
+    flex:2;
+    color:#999;
+}
+footer p a:nth-child(3),footer p a:nth-child(4){
+    flex:1;
+}
+#hot{
+    width:100%;
+    display:flex;
+}
+.hot{
+    flex:3;
+    display:flex;
+}
+.hot a{
+    display:block;
+}
+.hot a img{
+    width:100%;
+}
+.hot a:first-child{
+    margin:10px 5px 10px 5px;
+    border-right:1px solid #ccc;
+    padding-right:5px;
+    flex:2;
+}
+.hot a:last-child{
+    flex:1;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.hot a:last-child img{
+    width:70%;
+    padding-left:5px;
+}
+.list{
+    flex:7;
+    line-height:36px;
+    font-size:12px;
+}
+.list ul li{
+    display: flex;
+    flex-direction: column;
+    margin:18px 5px 10px 5px;
+}
+.list ul li span{
+    height: 18px;
+    line-height:18px;
+}
+.list ul li .red{
+    color:#F00;
+}
+.fensi{
+    display:flex;
+    flex-direction: row;
+}
+.fensi a{
+   display:block;
+   flex:1;
+    width:100%;
+}
+.fensi a img{
+    width:100%;
+}
+.hei{
+    display:flex;
+    flex-direction: column;
+    width:100%;
+}
+.hei a{
+    width:100%;
+    margin-bottom: 1px;
+    display:block;
+}
+.hei img{
+    width:100%;
+    vertical-align:bottom;
+}
+.buy ul{
+    display:flex;
+    padding:3px 0 5px;
+    background:#F00;
+}
+.buy ul li{
+    background:#FFF;
+    border-radius:5px;
+    width:25%;
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+    color:#000;
+    margin-right:3px;
+    font-size:13px;
+    padding-top:3px;
+    position: relative;
+}
+.buy ul li .special{
+    width:80%;
+    background:linear-gradient(to left,rgba(255,0,0,1),rgba(255,0,255,1));
+    border-radius:10px;
+    text-align:center;
+    overflow:hidden;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+    color:#FFF;
+    line-height:normal;
+    position: absolute;
+    left:50%;
+    font-size:12px;
+    transform:translate(-50%);
+    bottom:5px;
+}
+.buy ul li:nth-child(1){
+    margin-left: 3px;
+}
+.buy ul li img{
+    width:80%;
+    margin:5px 0 5px 0;
+}
+.double{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    color:#FF0000;
+    padding:5px 0 5px 0;
+    position: relative;
+}
+.double img{
+    vertical-align: middle;
+    width:30%;
+}
+.double span{
+    width:34px;
+    height:1px;
+    border-bottom:1px solid rgba(255,0,0,.5);
+    position: absolute;
+}
+.double span:first-child{
+    top:50%;
+    left:30%;
+}
+.double span:last-child{
+    top:50%;
+    right:38%;
+}

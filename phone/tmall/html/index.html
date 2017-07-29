@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, maximum=1.0,minimum=1.0,initial-scale=1.0,ser-scalable=no">
+    <title>天猫首页</title>
+    <link rel="stylesheet" href="../style/index.css">
+</head>
+<body>
+<div class="container">
+    <header id="header">
+        <nav id="nav">
+            <ul>
+                <li><span class="iconfont">&#xe608;
+</span></li>
+                <li class="search">
+                    <form action="javascript:;">
+                        <input type="text" placeholder="搜索商品/店铺">
+                        <span class="iconfont">&#xe602;</span>
+                    </form>
+                </li>
+                <li><span>登录</span></li>
+            </ul>
+        </nav>
+        <section id="section">
+            <ul id="u">
+                <li class="active">
+                    <a href="javascript:;">
+                        <img src="../images/banner1.webp">
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <img src="../images/banner2.webp">
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <img src="../images/banner3.webp">
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <aside id="aside">
+                <a class="hover" href="javascript:;"></a><a href="javascript:;"></a><a href="javascript:;"></a>
+        </aside>
+    </header>
+    <div id="wrap">
+        <div class="wrapper">
+            <ul class="ul">
+                <li>
+                    <a href="javascript:;"><img src="../images/jifen.webp"></a>
+                    <span>积分乐园</span>
+                </li>
+                <li>
+                    <a href="javascript:;"><img src="../images/chong.webp"></a>
+                    <span>充值</span>
+                </li>
+                <li>
+                    <a href="javascript:;"><img src="../images/jinkou.webp"></a>
+                    <span>天猫国际</span>
+                </li>
+                <li>
+                    <a href="javascript:;"><img src="../images/ju.webp"></a>
+                    <span>聚划算</span>
+                </li>
+                <li>
+                    <a href="javascript:;"><img src="../images/shop.webp"></a>
+                    <span>天猫超市</span>
+                </li>
+            </ul>
+            <ul class="ul">
+                <li>
+                    <a href="javascript:;"><img src="../images/jifen.webp"></a>
+                    <span>积分乐园</span>
+                </li>
+                <li>
+                    <a href="javascript:;"><img src="../images/chong.webp"></a>
+                    <span>充值</span>
+                </li>
+                <li>
+                    <a href="javascript:;"><img src="../images/jinkou.webp"></a>
+                    <span>天猫国际</span>
+                </li>
+                <li>
+                    <a href="javascript:;"><img src="../images/ju.webp"></a>
+                    <span>聚划算</span>
+                </li>
+                <li>
+                    <a href="javascript:;"><img src="../images/shop.webp"></a>
+                    <span>天猫超市</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="hot">
+        <div class="hot">
+            <a href="javascript:;"><img src="../images/hot.webp"></a><a href="javascript:;"><img src="../images/notice.webp"></a>
+        </div>
+        <div class="list">
+            <ul>
+                <li>
+                    <span>美妆买199送199</span>
+                    <span class="red">买199送199+全场不止5折</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="fensi">
+        <a href="javascript:;"><img src="../images/fensi1.webp"></a>
+        <a href="javascript:;"><img src="../images/fensi2.webp"></a>
+        <a href="javascript:;"><img src="../images/fensi3.webp"></a>
+    </div>
+    <div class="hei">
+        <a href="javascript:;"><img src="../images/hei.webp"></a>
+        <a href="javascript:;"><img src="../images/11.webp"></a>
+    </div>
+    <div class="buy">
+        <ul>
+            <li>
+                <span>汽车</span>
+                <img src="../images/car.webp">
+                <span class="special">汽车独家首发</span>
+            </li>
+            <li>
+                <span>家居</span>
+                <img src="../images/home.webp">
+                <span class="special">汽车独家首发</span>
+            </li>
+            <li>
+                <span>女装</span>
+                <img src="../images/clothes.webp">
+                <span class="special">汽车独家首发</span>
+            </li>
+            <li>
+                <span>童装童鞋</span>
+                <img src="../images/child.webp">
+                <span class="special">汽车独家首发</span>
+            </li>
+        </ul>
+    </div>
+    <div class="double">
+        <p><span></span><img src="../images/double11.webp">必抢<span></span></p>
+    </div>
+    <footer>
+       <p><a href="javascript:;">登录</a><span>|</span><a href="javascript:;">注册</a><span>|</span><a href="javascript:;">天猫首页</a><span>|</span><a href="javascript:;">下载客户端</a></p>
+        <p>@2003-2016Tmall.com版权所有</p>
+    </footer>
+</div>
+<script src="../js/bufferMove.js"></script>
+<script>
+    window.onload = function () {
+        var oSe = $("section");
+        var oLi = getTagName(oSe,"li");
+        var oAside = $("aside");
+        var oA = getTagName(oAside,"a");
+        var oHeader = $("header");
+        var oNav = $("nav");
+
+
+       // var timer = null;
+        var index = 0;
+        setInterval(function () {
+            index ++;
+            if(index >oLi.length - 1){
+                index = 0;
+            }
+            for(var i= 0,len=oLi.length;i<len;i++){
+                bufferMove(oLi[i],{opacity:0}, function () {
+                    this.display = "none";
+                });
+                 oA[i].className = "";
+            }
+            oLi[index].style.display = "block";
+            bufferMove(oLi[index],{opacity:100});
+            oA[index].className = "hover";
+
+        },2000);
+
+        var oH = oLi[0].clientHeight + "px";
+        //console.log(oH);
+        oHeader.style.height = oH;
+
+        window.onresize = function () {
+             oH = oLi[0].clientHeight + "px";
+            oHeader.style.height = oH;
+        }
+        window.onscroll = function () {
+            var scrollTop = document.body.scrollTop;
+            console.log(scrollTop);
+            if(scrollTop>=parseInt(oH)){
+                console.log("1");
+                oNav.style.background = "#f32d2d";
+            }else{
+                oNav.style.background = "";
+            }
+        }
+    }
+    function $(id){
+        return document.getElementById(id);
+    }
+function getTagName(obj,tagName){
+    return obj.getElementsByTagName(tagName);
+}
+</script>
+</body>
+</html>

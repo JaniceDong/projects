@@ -1,0 +1,205 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+html,body{
+    height:100%;
+}
+body{
+    font-size:0.12rem;
+    font-family:Helvetica;
+}
+ul li{
+    list-style:none;
+}
+a{
+    text-decoration:none;
+}
+html{
+    height:100%;
+    font-size:15.625vw;
+}
+@font-face {font-family: 'iconfont';
+    src: url('../font1/iconfont.eot'); /* IE9*/
+    src: url('../font1/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../font1/iconfont.woff') format('woff'), /* chrome、firefox */
+    url('../font1/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('../font/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+.iconfont{
+    font-family:"iconfont" !important;
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;}
+.container{
+    height: 100%;
+    width:100%;
+}
+header{
+    height:1.76rem;
+    border-bottom:.02rem solid #000;
+    width:100%;
+    position: fixed;
+    top:0;
+    left:0;
+}
+header .count{
+    width:100%;
+    height:.88rem;
+    line-height:.88rem;
+    padding-left: .24rem;
+    background-color:#000;
+    font-size:.28rem;
+    color:#FFF;
+    font-weight: bold;
+}
+header .count .num{
+    padding-right:.45rem;
+}
+header .count .all{
+    color:#e4366b;
+}
+header p{
+    width:100%;
+    height:.86rem;
+}
+header p img{
+    width:100%;
+    vertical-align: top;
+}
+header form{
+    width:100%;
+    height:.88rem;
+    background-color:#52525a;
+    text-align:center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+form input{
+    outline: none;
+    border:none 0;
+    background:#FFF;
+    width:90%;
+    height:.56rem;
+    line-height:.56rem;
+    border-radius:.3rem;
+    padding-left:.77rem;
+    font-size:.21rem;
+}
+form span{
+    position: absolute;
+    left:.55rem;
+    font-size:.49rem;
+}
+footer{
+    width:100%;
+    height:1rem;
+    background-color:#484850;
+    position: fixed;
+    bottom:0;
+}
+footer ul{
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:#FFF;
+    font-size:.24rem;
+}
+footer ul li{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top:.05rem solid #484850;
+    padding-top:.03rem;
+
+}
+footer ul .active{
+    border-color:#e5376c;
+}
+footer ul li p{
+    font-weight: bold;
+    height:.4rem;
+    line-height:.4rem;
+}
+footer ul .iconfont{
+    font-size:.5rem;
+    color:#FFF;
+}
+section{
+    padding-top:1.74rem;
+    height:8.6rem;
+    overflow-y:scroll;
+    background-color:#f7f7f7;
+}
+section div{
+    display:flex;
+    background-color:#FFF;
+    justify-content: center;
+    align-items:center;
+    padding:.28rem .3rem .3rem .33rem;
+    border-bottom:.03rem solid #aaa;
+}
+section .price{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex:6;
+    font-size:.24rem;
+    color:#000;
+    font-weight: bold;
+    padding-left: .25rem;
+    line-height:.4rem;
+}
+section .price .first{
+    width:2.82rem;
+}
+section .price b{
+    color:#e3366b;
+}
+section .price input{
+    width:.72rem;
+    height:.42rem;
+    border-radius:.04rem;
+    box-shadow:-.02rem -.02rem .02rem #afafaf;
+    text-align:center;
+    line-height:.42rem;
+    margin:0 .15rem;
+}
+section .price .decrease,section .price .increase{
+    display:inline-block;
+    width:0.57rem;
+    height:.42rem;
+    background:url(../images/bg4.png) repeat-x;
+    background-size:auto .42rem;
+    border-radius:.1rem;
+    vertical-align:bottom;
+    text-align:center;
+    line-height:.42rem;
+    color:#FFF;
+}
+section .img{
+    flex:3;
+}
+section .img img{
+    width:100%;
+}
+section .r{
+    flex:1;
+    height:1.6rem;
+    display:flex;
+    flex-direction: column;
+    text-align:center;
+    font-size:.33rem;
+    color:#000;
+}
+section .r span{
+    flex:1;
+}
