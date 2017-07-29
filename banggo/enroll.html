@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+    <link rel="stylesheet" href="style/index.css">
+    <script src="js/jQuery.js"></script>
+    <script src="js/jquery.cookie.js"></script>
+    <script src="js/enroll.js"></script>
+</head>
+<body>
+<div id="logo" class="clearfix">
+    <div id="logo-main">
+        <h2 class="h-logo">
+            <a href="javascript:;"></a>
+        </h2>
+    </div>
+</div>
+<div id="register" class="clearfix">
+    <div id="reg-title">
+        <a id="mobile">手机注册</a>
+    </div>
+    <div id="reg-main">
+        <div class="reg-box">
+            <div class="reg-title">
+                第一步：填写手机账户信息（以下内容均为必填）
+            </div>
+            <form name="mobile_form" id="mobile_form" method="post" action="">
+                <div class="item Lovh Lmt15">
+                    <div class="ltext Lfll" onselectstart="return false">用户名：</div>
+                    <div class="Lfll">
+                        <div class="inputlbd Lfll">&nbsp;</div>
+                        <input autocomplete="off" id="username" name="uid" value="" class="input1 Lfll">
+                        <span class="tips">4-20个字符，一个汉字为两个字符，推荐使用中文会会员名字。一旦注册成功会员名将不能修改。</span>
+                        <span id="user-message" class="errorinfo Lcfl"><font color="red">用户名不能为空</font></span>
+                    </div>
+                </div>
+
+                <div class="item Lovh">
+                    <div class="ltext Lfll" onselectstart="return false">手机号码：</div>
+                    <div class="Lfll">
+                        <div class="inputlbd Lfll">&nbsp;</div>
+                        <input autocomplete="off" id="uesrnum" name="mobile" value="" class="input1 Lfll clearfix">
+                        <span class="tips" onselectstart="return false">请输入您的手机号码。</span>
+                        <span id="num-text"><font color="red"></font></span>
+                    </div>
+                </div>
+
+                <div class="item Lovh">
+                    <div class="ltext Lfll" onselectstart="return false">验证码：</div>
+                    <div class="Lfll">
+                        <div class="inputlbd Lfll">&nbsp;</div>
+                        <input autocomplete="off" type="text" maxlength="4" name="codeNumber" class="input2 Lfll" id="img2Code">
+							<div id="mySpan2" onselectstart="return false"></div>
+                        <a id="check" onselectstart="return false">换一张</a>
+                        <br>
+                        <span id="img2_message" class="errorinfo Lcfl"></span>
+                    </div>
+                </div>
+
+                <div class="item Lovh">
+                    <div class="ltext Lfll">&nbsp;</div>
+                    <a id="send" onselectstart="return false">
+                        <span>发送激活码</span>
+                    </a>
+                </div>
+            </form>
+        </div>
+        <!--第二个页面-->
+        <div id="reg-box2">
+            <div class="reg-title">第二步：填写获得的激活码</div>
+            <form name="mobile2_form" id="mobile2_form" method="post" >
+                <div class="item Lovh Lmt15">
+                    <div class="ltext Lfll" onselectstart="return false">用户名：</div>
+                    <div class="Lfll">
+                        <div class="inputlbd Lfll">&nbsp;</div>
+                        <input autocomplete="off" type="text" class="input1 Lfll" id="user_id" name="uid" value="" readonly="">
+                        <span id="box2-nametext" class="errorinfo Lcfl">&nbsp;</span>
+                    </div>
+                </div>
+                <div class="item Lovh">
+                    <div class="ltext Lfll" onselectstart="return false">手机号码：</div>
+                    <div class="Lfll">
+                        <div class="inputlbd Lfll">&nbsp;</div>
+                        <input autocomplete="off" type="text" class="input1 Lfll" id="mobile2" name="mobile" value="" readonly="">
+                        <span class="tips Lfll Ldn">&nbsp;</span>
+                        <span class="errorinfo Lcfl">&nbsp;</span>
+                    </div>
+                </div>
+                <div class="item Lovh">
+                    <div class="ltext Lfll" onselectstart="return false">登录密码：</div>
+                    <div class="Lfll">
+                        <div class="inputlbd Lfll">&nbsp;</div>
+                        <input autocomplete="off" type="password" class="input1 Lfll" name="pwd" value="" id="name-pass">
+                        <span class="tips">6-16个字符，请使用字母加数字或符号的组合密码。</span>
+                        <span id="pass-text" class="errorinfo Lcfl">&nbsp;</span>
+                    </div>
+                </div>
+                <div class="item Lovh">
+                    <div class="ltext Lfll" onselectstart="return false">确认密码：</div>
+                    <div class="Lfll">
+                        <div class="inputlbd Lfll">&nbsp;</div>
+                        <input autocomplete="off" type="password" class="input1 Lfll" name="rpassword" id="name-pass2" value="">
+                        <span class="tips" onselectstart="return false">请再次输入登录密码。</span>
+                        <span id="pass-text2" class="errorinfo Lcfl"></span>
+                    </div>
+                </div>
+                <div class="item Lovh">
+                    <div class="ltext Lfll" onselectstart="return false">激活码：</div>
+                    <div class="Lfll">
+                        <div class="inputlbd Lfll">&nbsp;</div>
+                        <input type="text" autocomplete="off" class="input1 Lfll" name="mobile_code" id="activeCode" value="">
+                        <span class="tips1">请输入您的激活码。</span>
+                        <span id="activeCode_messsage" class="errorinfo Lcfl">&nbsp;</span>
+                    </div>
+                </div>
+                <div class="item Lovh Lmt15">
+                    <div class="ltext Lfll">&nbsp;</div>
+                    <a class="agree Lfll" onselectstart="return false">
+                        <span></span>
+                    </a>
+                    <div class="postphonecode">
+                        <span id="notRecieve">手机未收到验证码，</span> <a class="rsendCode">重新发送</a>&nbsp;&nbsp;
+                        <span id="firstClickMessage" class="errorinfo Lcfl" style="color: red"></span>
+                        <span id="errorMessage" class="errorinfo Lcfl" style="color: red"></span>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="ltext Lfll">&nbsp;</div>
+                    <div class="Lfll">
+                        <a href="javascript:;" target="_blank" class="useragreement">《邦购用户协议》</a>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+        <!--注册成功页面-->
+        <div id="reg-box3">
+            <div class="reg_title" onselectstart="return false">第二步：注册帐号成功</div>
+            <div class="reg-success">
+                <div class="suctips" onselectstart="return false">恭喜您注册成功！</div>
+                <div class="content" onselectstart="return false">您登录邦购的用户名为：<span class="success-name"></span>，您随时可使用此用户名享受便宜又放心的购物乐趣。</div>
+
+                <a class="btn_goShop" href="javascript:;"><span></span></a>
+                <div class="hr">&nbsp;</div>
+                <div class="usercheck">
+                    <h5 onselectstart="return false">请完成帐户安全验证</h5>
+                    <p onselectstart="return false">验证手机和邮箱可保护您的账户安全，帮助您快速找回密码，并可接收订单处理等信息。</p>
+                    <div class="Lovh">
+                        <a href="javascript:;" class="checkmail">立刻去验证邮箱&gt;&gt;</a>
+                        <a href="javascript:;" class="checkphone">立刻去验证手机&gt;&gt;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="reg-right">
+            <div class="reg-main">
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+<div id="reg_bot">
+    美特斯邦威集团网站：
+    <a href="javascript:;">美特斯邦威</a> |
+    <a href="javascript:;">ME&amp;CITY</a> |
+    <a href="javascript:;">CH'IN祺</a> |
+    <a href="javascript:;">邦购网</a>
+</div>
+</body>
+</html>

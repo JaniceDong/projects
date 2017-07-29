@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>订单</title>
+    <link rel="stylesheet" href="style/index.css">
+    <script src="js/jQuery.js"></script>
+    <script src="js/jquery.cookie.js"></script>
+    <script src="js/cookie.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="js/distpicker.data.js"></script>
+    <script src="js/distpicker.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/order.js"></script>
+</head>
+<body>
+<div id="head-logo" style="height: 60px;">
+    <div id="head-main" style="height: 60px;">
+        <div id="head-left">
+            <a href="javascript:;" class="first"><img src="images/veo_brand_1.png" alt="首页"></a>
+            <a href="javascript:;"><img src="images/veo_brand_2.png" alt="美特斯邦威"></a>
+            <a href="javascript:;"><img src="images/veo_brand_3.png" alt="米喜迪" style="opacity: 1;"></a>
+            <a href="javascript:;"><img src="images/veo_brand_4.png" alt="米喜迪kids" style="opacity: 1;"></a>
+            <a href="javascript:;"><img src="images/veo_brand_5.png" alt="Moomoo" style="opacity: 1;"></a>
+        </div>
+    </div>
+</div>
+<div class="land">
+    <div class="land_main">
+        <p class="left" id="left">欢迎来到邦购网，全场满199元包邮</p>
+        <div class="right">
+            <div class="right_little right1">
+                <a class="text text1" href="javascript:;">登录<em></em></a>
+                <div class="right_box box1">
+                    <a href="javascript:;">QQ账户登录</a>
+                    <a href="javascript:;">支付宝登录</a>
+                    <a href="javascript:;">微信账户登录</a>
+                </div>
+            </div>
+            <div class="right_little right2">
+                <a class="text2" href="javascript:;">注册</a>
+            </div>
+            <div class="right_little right3">
+                <a class="text text3" href="javascript:;">我的邦购<em></em></a>
+                <div class="right_box box2">
+                    <a href="javascript:;">我的订单</a>
+                    <a href="javascript:;">我的积分</a>
+                    <a href="javascript:;">我的点赞</a>
+                    <a href="javascript:;">收货地址</a>
+                </div>
+            </div>
+            <div class="right_little">
+                <a style="width:60px" class="text4" href="javascript:;" target="_blank">会员中心</a>
+            </div>
+            <div class="right_little right4">
+                <a href="javascript:;" title="" target="_blank" class="text down">
+                    <b class="down" style="width:9px;height:10px;background:url('images/Iphone-vertical.png') 0 0 no-repeat;padding-right:12px;"></b>
+                    下载APP
+                    <em style="width:90px"></em>
+                </a>
+                <div class="right_box box3">
+                    <img alt="扫描邦购手机二维码" src="images/mbshop_pic_mobile.png" width="140" height="140">
+                </div>
+            </div>
+            <div class="right_little">
+                <a href="javascript:;" target="_blank" title="新浪微博" class="text4">微博</a>
+                <a title="" class="wx">微信
+                    <div class="wx_box">
+                        <img src="images/mbshop_pic_erweima.jpg" width="140" height="140" alt="">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="shop-logo" class="clearfix">
+    <div class="shopl-left">
+        <div class="shop-logo-left" id="ad_common_logo"><a style="width:230px;height:55px;float:left;overflow:hidden" href="banggou.html"><img src="images/mbshop_new_logo2.png" style="margin-top:-10px;margin-left:-23px;display:block;opacity:1;" width="266" height="73" alt="banggo"></a></div>
+    </div>
+</div>
+<div id="shop-con" class="clearfix">
+    <div id="shop-Content" class="clearfix">
+        <span class="shop-state2"></span>
+    </div>
+</div>
+<div id="order-address">
+    <dl>
+        <dt>收货地址【
+            <span class="order_address_prompt">温馨提示：由于监管要求，请您务必填写真实姓名，以保障快递的时效性。</span>】</dt>
+        <dd>
+            <ul>
+                <li id="app_new">
+                    <label class="mbshop_radio">
+                        <i class="iconfont" id="applyNew"></i>
+                        <b>使用新地址</b>
+                    </label>
+                </li>
+                <div class="order-shop-add">
+                    <table cellpadding="0" cellspacing="0">
+                        <tbody><tr>
+                            <td>收货人：</td>
+                            <td><input type="text" name="apply_name" id="sh_name" maxlength="10"></td>
+                        </tr>
+                        <tr>
+                            <td>所在地区：</td>
+                            <td>
+                                <form class="form-inline">
+                                    <div id="distpicker5">
+                                        <div class="form-group">
+                                            <label class="sr-only" for="province10"></label>
+                                            <select class="form-control" id="province10"></select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="sr-only" for="city10"></label>
+                                            <select class="form-control" id="city10"></select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="sr-only" for="district10"></label>
+                                            <select class="form-control" id="district10"></select>
+                                        </div>
+                                    </div>
+                                </form>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>详细地址：</td>
+                            <td><input type="text" name="detail_address" id="sh_detail" maxlength="70"></td>
+                        </tr>
+                        <tr>
+                            <td>手机号码：</td>
+                            <td>
+                                <input type="text" name="apply_mobile" id="sh_mobile" maxlength="11">
+                                或 固定电话：
+                                <input type="text" name="apply_telpone" id="sh_telpone" maxlength="16">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>邮箱:</td>
+                            <td>
+                                <input type="text" name="apply_email" id="sh_email" maxlength="60"> <span>用来接收订单提醒邮件，便于您及时了解订单状态</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>邮编:</td>
+                            <td>
+                                <input type="text" name="apply_zipcode" id="sh_zipcode" maxlength="6">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td><a class="order-true" href="javascript:;" title="确认信息">确定</a></td>
+                        </tr>
+                        </tbody></table>
+                </div>
+            </ul>
+        </dd>
+    </dl>
+</div>
+<div id="order-pay">
+    <dl>
+        <dt>支付方式</dt>
+        <dd>
+            <label class="order-radio">
+                <i class="pay-iconfont"></i>
+                <b>在线支付</b>
+            </label>
+        </dd>
+    </dl>
+</div>
+<div id="order-disp">
+    <dl>
+        <dt>配送方式</dt>
+        <dd>
+            <label class="order-radio">
+                <i class="pay-iconfont"></i>
+                <b>快递</b>
+            </label>
+        </dd>
+    </dl>
+</div>
+<div id="order-Title">
+    <span class="order-Title1">商品名称</span>
+    <span class="order-Title2">颜色/尺码</span>
+    <span class="order-Title3">数量</span>
+    <span class="order-Title4">单价</span>
+    <span class="order-Title5">小计</span>
+</div>
+<div id="order-list">
+    <div class="order-bg">邦购</div>
+    <div class="order-shop">
+        <table>
+
+        </table>
+        <div class="order-fare">运费：<i id="order-freight">￥0.00</i></div>
+    </div>
+</div>
+<div id="order-invoice">
+    <label class="order-checkbox">
+        <i class="invoice-i"></i>
+        <b>需要发票</b>
+    </label>
+</div>
+<div id="order-packet">
+    <h6>使用红包</h6>
+    <div class="order-warp">
+        <div class="order-table-tab">
+            <span class="use-packet red">可用红包</span>
+            <span class="use-quan">可用包邮券</span>
+            <a href="javascript:;" target="__blank">查看全部红包</a>
+        </div>
+    </div>
+    <div class="favorable-table">
+        <table>
+            <tbody>
+            <tr>
+                <th width="100">红包金额</th>
+                <th width="400">使用限制</th>
+                <th width="400">适用范围</th>
+                <th width="190">有效时间</th>
+            </tr>
+            </tbody>
+            <tbody id="package_list" class="favorable-list">	<tr>
+                <td colspan="5" style="text-align: center;">
+                    <span>您暂无可用红包</span>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="order-convent">
+        <div class="order-Content">
+            <p>有红包兑换码？绑定红包。</p>
+            <span>输入红包兑换码:</span>
+            <span><input type="text" value="" id="hot-bag"></span>
+            <span>输入验证码:</span>
+            <span><input type="text" value="" id="verify"></span>
+            <span class="order-verify"></span>
+            <a href="javascript:;" title="确认绑定" id="bind_package">确认绑定</a>
+        </div>
+    </div>
+</div>
+<div id="order-quan">
+    <h6>使用包邮券</h6>
+    <div class="order-warp">
+        <div class="order-table-tab">
+            <span class="use-packet">可用红包</span>
+            <span class="use-quan">可用包邮券</span>
+            <a href="javascript:;" target="__blank">查看全部包邮券</a>
+        </div>
+    </div>
+    <div class="favorable-table">
+        <table>
+            <thead>
+            <tr>
+                <th width="100">类型券</th>
+                <th width="400">使用限制</th>
+                <th width="400">适用范围</th>
+                <th width="190">有效时间</th>
+            </tr>
+            </thead>
+            <tbody id="postage_list" class="favorable-list"><tr><td colspan="5" style="text-align: center;"><span>您暂无可用包邮券</span></td></tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>
+<div id="order-banggobi">
+    <span class="banggobi-title">使用邦购币</span>
+    <div class="banggobi-content">
+        <span class="banggobi-text">本次使用</span>
+        <span><input type="text" value="" id="bcoin"></span>
+        <span class="banggobi-text2">个邦购币</span>
+        <a href="javascript:;" title="使用" id="use_coin" class="mbshop_banggobiUse">使用</a>
+        <span class="order-balance">您当前可用余额 <b>¥0</b></span>
+    </div>
+</div>
+<div id="integral">
+    <span class="banggobi-title">使用积分</span>
+    <div class="banggobi-content">
+        <span class="banggobi-text">本次使用</span>
+        <span><input type="text" value="" id="order_point" name="integral"></span>
+        <span class="banggobi-text">个积分</span>
+        <span class="order-int">您当前积分： <b id="max-user-point">20</b>，本单最高可用积分 <b id="max-order-point">0</b></span>
+    </div>
+</div>
+<div id="order-Submit">
+            <span class="shop-orderPrice">
+                <p>商品金额：<b>¥<span id="goods_total"></span>
+                </b> + 运费：<b>¥<span id="freight">0.00</span></b>
+                    - <b>积分：¥<span id="point_price">0.00</span></b>
+                    - <b>红包：¥<span id="hongbao">0.00</span></b>
+
+                    - 邦购币：<b>¥<span id="mcoin">0</span></b></p><br>
+                <i>应付总额：</i><br>
+                ¥<strong id="payment"></strong><br>
+                <input type="hidden" name="token" value="">
+                <a href="javascript:;"id="submit_order">提交订单</a>
+            </span>
+</div>
+<div id="order-fapiao">
+    <div class="order-openpop_title">
+        <span>发票信息</span>
+        <a class="order-close" href="javascript:;" title="关闭"></a>
+    </div>
+    <p>
+        温馨提醒：<br>
+        发票金额为现金支付金额（扣除礼品卡余额、抵用券、返利金额等）<br>发票信息由第三方商家提供<br>如果本次订购产品发生退货，请将发票一并退回。
+    </p>
+    <div class="border-conFrame">
+        <table cellpadding="0" cellspacing="0" border="0">
+            <tbody><tr>
+                <th width="80">发票类型：</th>
+                <td>
+                    <label class="order-open-radio">
+                        <i class="open-iconfont"></i>
+                        <b>个人</b>
+                    </label>
+                    <label class="order-open-radio">
+                        <i class="open-iconfont"></i>
+                        <b>公司</b>
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <th>发票抬头：</th>
+                <td><input type="text" placeholder="个人" id="invoice-title" name="invoice_title"></td>
+            </tr>
+            <tr>
+                <th>&nbsp;</th>
+                <td>
+                    <a class="order-save" href="javascript:;">保存</a>
+                </td>
+            </tr>
+            </tbody></table>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="main-bot" class="clearfix" style="min-width: 1200px;">
+    <div id="bot-main">
+        <ul class="bot-list">
+            <li><a href="javascript:;"><img src="images/zyshare01.png" alt=""></a></li>
+            <li><a href="javascript:;"><img src="images/zyshare02.png" alt=""></a></li>
+            <li><a href="javascript:;"><img src="images/zyshare03.png" alt=""></a></li>
+        </ul>
+        <div class="bot-right">
+            <div class="bot-top">
+                <li><a href="javascript:;"><img src="images/060819.jpg" alt=""></a></li>
+            </div>
+            <div class="bot-bot">
+                <ul>
+                    <li>
+                        <img src="images/indexonline.png" alt="">
+                        <p>在线客服</p>
+                    </li>
+                    <li class="sug">
+                        <img src="images/indexopinion.png" alt="">
+                        <p>意见反馈</p>
+                    </li>
+                    <li class="question">
+                        <img src="images/indexsurvey.png" alt="">
+                        <p>问卷调查</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="foot">
+    <div id="foot-main">
+        <div id="foot-top">
+            <dl>
+                <dt>新手指南</dt>
+                <dd><a target="_blank" href="javascript:;">
+                    注册新用户</a></dd>
+                <dd><a target="_blank" href="javascript:;">
+                    用户协议</a></dd>
+                <dd><a target="_blank" href="javascript:;">
+                    找回密码</a></dd>
+            </dl>
+            <dl>
+                <dt>购物指南</dt>
+                <dd><a target="_blank" href="javascript:;">
+                    红包使用说明</a></dd>
+                <dd><a target="_blank" href="javascript:;">
+                    购物流程</a></dd>
+                <dd><a target="_blank" href="javascript:;">
+                    订单状态</a></dd>
+                <dd><a target="_blank" href="javascript:;">
+                    邦购币绑定与使用</a></dd>
+            </dl>
+            <dl>
+                <dt>配送方式</dt>
+                <dd><a target="_blank" href="javascript:;">
+                    配送范围</a></dd>
+                <dd><a target="_blank" href="javascript:;">
+                    订单拆分</a></dd>
+                <dd><a target="_blank" href="javascript:;">
+                    商品验货与签收</a></dd>
+            </dl>
+            <dl>
+                <dt>支付方式</dt>
+                <dd><a target="_blank" href="javascript:;">
+                    发票制度</a></dd>
+                <dd><a target="_blank" href="javascript:;">
+                    支付方式</a></dd>
+            </dl>
+            <dl>
+                <dt>售后服务</dt>
+                <dd><a target="_blank" href="javascript:;">
+                    退换货政策</a></dd>
+                <dd><a target="_blank" href="javascript:;">
+                    退换办理流程</a></dd>
+                <dd><a target="_blank" href="javascript:;">
+                    退款说明</a></dd>
+            </dl>
+
+            <dl>
+                <dt>联系方式</dt>
+                <dd>客服：400 821 9988</dd>
+                <dd>监督：021-38119999-6038</dd>
+                <dd><a href="javascript:;" target="_blank">在线客服</a></dd>
+                <dd><a href="javascript:;" target="_blank">用户调研</a></dd>
+            </dl>
+        </div>
+        <div id="foot-bot">
+            <p>CopyRight © 2000-2016, 版权所有&nbsp;上海美特斯邦威服饰股份有限公司 banggo.com 沪ICP备05033127号</p>
+                <span>
+                    <a href="javascript:;" target="_blank"><img src="images/lz_beian_h40.png" width="136" height="40" alt="网站备案信息" style="display: block; opacity: 1;"></a>
+                    <a href="javascript:;" target="_blank"><img src="images/lz_shgs_h40.png" width="118" height="40" alt="上海工商" style="display: block; opacity: 1;"></a>
+                </span>
+        </div>
+    </div>
+</div>
+<div id="btn">
+    <a class="top" href="javascript:;" style="display: block;"></a>
+    <a class="call" href="javascript:;"></a>
+</div>
+</body>
+</html>

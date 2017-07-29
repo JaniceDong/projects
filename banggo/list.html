@@ -1,0 +1,1749 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>列表页</title>
+    <link rel="stylesheet" href="style/index.css">
+    <script src="js/jQuery.js"></script>
+    <script src="js/jquery.cookie.js"></script>
+    <script src="js/cookie.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/list.js"></script>
+</head>
+<body>
+<div id="head-logo" style="height: 60px;">
+    <div id="head-main" style="height: 60px;">
+        <div id="head-left">
+            <a href="javascript:;" class="first"><img src="images/veo_brand_1.png" alt="首页"></a>
+            <a href="javascript:;"><img src="images/veo_brand_2.png" alt="美特斯邦威"></a>
+            <a href="javascript:;"><img src="images/veo_brand_3.png" alt="米喜迪" style="opacity: 1;"></a>
+            <a href="javascript:;"><img src="images/veo_brand_4.png" alt="米喜迪kids" style="opacity: 1;"></a>
+            <a href="javascript:;"><img src="images/veo_brand_5.png" alt="Moomoo" style="opacity: 1;"></a>
+        </div>
+    </div>
+</div>
+
+<div class="land">
+    <div class="land_main">
+        <p class="left" id="left">欢迎来到邦购网，全场满199元包邮</p>
+        <div class="right">
+            <div class="right_little right1">
+                <a class="text text1" href="javascript:;">登录<em></em></a>
+                <div class="right_box box1">
+                    <a href="javascript:;">QQ账户登录</a>
+                    <a href="javascript:;">支付宝登录</a>
+                    <a href="javascript:;">微信账户登录</a>
+                </div>
+            </div>
+            <div class="right_little right2">
+                <a class="text2" href="javascript:;">注册</a>
+            </div>
+            <div class="right_little right3">
+                <a class="text text3" href="javascript:;">我的邦购<em></em></a>
+                <div class="right_box box2">
+                    <a href="javascript:;">我的订单</a>
+                    <a href="javascript:;">我的积分</a>
+                    <a href="javascript:;">我的点赞</a>
+                    <a href="javascript:;">收货地址</a>
+                </div>
+            </div>
+            <div class="right_little">
+                <a style="width:60px" class="text4" href="javascript:;" target="_blank">会员中心</a>
+            </div>
+            <div class="right_little right4">
+                <a href="javascript:;" title="" target="_blank" class="text down">
+                    <b class="down" style="width:9px;height:10px;background:url('images/Iphone-vertical.png') 0 0 no-repeat;padding-right:12px;"></b>
+                    下载APP
+                    <em style="width:90px"></em>
+                </a>
+                <div class="right_box box3">
+                    <img alt="扫描邦购手机二维码" src="images/mbshop_pic_mobile.png" width="140" height="140">
+                </div>
+            </div>
+            <div class="right_little">
+                <a href="javascript:;" target="_blank" title="新浪微博" class="text4">微博</a>
+                <a title="" class="wx">微信
+                    <div class="wx_box">
+                        <img src="images/mbshop_pic_erweima.jpg" width="140" height="140" alt="">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="logo">
+    <div id="logo_main">
+        <div id="logo_left">
+            <a style="width:230px;height:55px;float:left;overflow:hidden" href="javascript:;">
+                <img src="images/mbshop_new_logo2.png" style="margin-top: -10px; margin-left: -23px; display: block; opacity: 1;" width="266" height="73" alt="banggo">
+            </a>
+        </div>
+        <div id="logo_center">
+            <div id="center_form">
+                <form>
+                    <div id="search-main">
+                        <input type="text" name="search-content" id="search-content" autocomplete="off"><input type="submit" name="search-btn" value="搜索" id="search-btn">
+                    </div>
+                    <ul id="search-list"></ul>
+                </form>
+            </div>
+            <div id="center_right">
+                <a href="javascript:;">秋上新</a><span>|</span>
+                <a href="javascript:;">夹克</a><span>|</span>
+                <a href="javascript:;" style="color:#D30A06">牛仔长裤</a><span>|</span>
+                <a href="javascript:;">雅圣利</a><span>|</span>
+                <a href="javascript:;" style="color:#D30A06">名将</a>
+            </div>
+        </div>
+        <div id="logo_right">
+            <div id="shop">
+                <a href="javascript:;">购物袋
+                    <b>0</b>
+                    件
+                </a>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+<div id="nav">
+    <ul>
+        <li id="list1">商品分类
+            <div id="nav_box1" style="display: none;">
+                <div id="menu-left">
+                    <div id="menu-box">
+                        <ul class="sub-nav">
+                            <li class="sub-list1 menu-list">
+                                <dl>
+                                    <dt>
+                                        <a href="javascript:;">当季流行</a>
+                                        <i></i>
+                                    </dt>
+                                    <dd>
+                                        <div class="dd-box">
+                                            <a href="javascript:;">秋上新</a>
+                                            <a href="javascript:;">棒球衫</a>
+                                            <a href="javascript:;" class="colord51819">商城同款</a>
+                                            <a href="javascript:;">热销风衣</a>
+                                        </div>
+                                    </dd>
+                                </dl>
+                                <div class="nav-wrap" style="display: none;">
+                                    <div class="nav-left">
+                                        <dl>
+                                            <dt>
+                                                <a href="javascript:;">男生热门</a>
+                                            </dt>
+                                            <dd>
+                                                <a href="javascript:;">卫衣</a>
+                                                <a href="javascript:;">T恤</a>
+                                                <a href="javascript:;">夹克</a>
+                                                <a href="javascript:;">长袖衬衫</a>
+                                                <a href="javascript:;">牛仔长裤</a>
+                                                <a href="javascript:;">休闲长裤</a>
+                                                <a href="javascript:;">运动长裤</a>
+                                                <a href="javascript:;">套头毛衣</a>
+                                                <a href="javascript:;">西装</a>
+                                                <a href="javascript:;">双肩包</a>
+                                                <a href="javascript:;">跑步鞋</a>
+                                                <a href="javascript:;">休闲鞋</a>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>
+                                                <a href="javascript:;">女生热门</a>
+                                            </dt>
+                                            <dd>
+                                                <a href="javascript:;">夹克</a>
+                                                <a href="javascript:;">毛衣</a>
+                                                <a href="javascript:;">T恤</a>
+                                                <a href="javascript:;">长袖衬衫</a>
+                                                <a href="javascript:;">连衣裙</a>
+                                                <a href="javascript:;">牛仔长裤</a>
+                                                <a href="javascript:;">休闲长裤</a>
+                                                <a href="javascript:;">套头卫衣</a>
+                                                <a href="javascript:;">双肩包</a>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>
+                                                <a href="javascript:;">儿童热门</a>
+                                            </dt>
+                                            <dd>
+                                                <a href="javascript:;">休闲长裤</a>
+                                                <a href="javascript:;">衬衫</a>
+                                                <a href="javascript:;">卫衣</a>
+                                                <a href="javascript:;">牛仔长裤</a>
+                                                <a href="javascript:;">连衣裙</a>
+                                                <a href="javascript:;">T恤</a>
+                                                <a href="javascript:;">针织裤</a>
+                                                <a href="javascript:;">夹克</a>
+                                                <a href="javascript:;">套头毛衣</a>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>
+                                                <a href="javascript:;">生活热门</a>
+                                            </dt>
+                                            <dd>
+                                                <a href="javascript:;">床上纺织品</a>
+                                                <a href="javascript:;">乳液/面霜</a>
+                                                <a href="javascript:;">创意礼品</a>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                    <div class="nav-right">
+                                        <div class="show">
+                                            <a href="javascript:;"><img src="images/banner-092.jpg" alt=""></a>
+                                        </div>
+                                        <div class="nav-logo">
+                                            <dl>
+                                                <div class="logo-box">
+                                                    <p>
+                                                        当季流行热门品牌
+                                                    </p>
+                                                    <dd><a href="javascript:;"><img src="images/mecity.jpg" alt=""></a></dd>
+                                                    <dd><a href="javascript:;"><img src="images/metersbonwe.png" alt=""></a></dd>
+                                                    <dd><a href="javascript:;"><img src="images/mango.jpg" alt=""></a></dd>
+                                                    <dd><a href="javascript:;"><img src="images/sp2.jpg" alt=""></a></dd>
+                                                    <dd><a href="javascript:;"><img src="images/sp1.jpg" alt=""></a></dd>
+                                                    <dd><a href="javascript:;"><img src="images/ysl.png" alt=""></a></dd>
+                                                    <dd><a href="javascript:;"><img src="images/adidas.png" alt=""></a></dd>
+                                                    <dd><a href="javascript:;"><img src="images/4.jpg" alt=""></a></dd>
+                                                </div>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="sub-list2 menu-list">
+                                <dl>
+                                    <dt>
+                                        <a href="javascript:;">男装</a>
+                                        <i></i>
+                                    </dt>
+                                    <dd>
+                                        <div class="dd-box">
+                                            <a href="javascript:;" class="colord51819">外套</a>
+                                            <a href="javascript:;" class="colord51819">裤装</a>
+                                            <a href="javascript:;">长袖衬衫</a>
+                                            <a href="javascript:;">毛衣</a>
+                                            <a href="javascript:;">卫衣</a>
+                                        </div>
+                                    </dd>
+                                </dl>
+                                <div class="nav-wrap" style="display: none;">
+                                    <div class="nav-left">
+                                        <dl>
+                                            <dt>
+                                                <a href="javascript:;">上装</a>
+                                            </dt>
+                                            <dd>
+                                                <a href="javascript:;">夹克</a>
+                                                <a href="javascript:;">毛衣</a>
+                                                <a href="javascript:;">T恤</a>
+                                                <a href="javascript:;">卫衣</a>
+                                                <a href="javascript:;">长袖衬衫</a>
+                                                <a href="javascript:;">西装</a>
+                                                <a href="javascript:;">套头卫衣</a>
+                                                <a href="javascript:;">开衫卫衣</a>
+                                                <a href="javascript:;">套头卫衣</a>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>
+                                                <a href="javascript:;">下装</a>
+                                            </dt>
+                                            <dd>
+                                                <a href="javascript:;">牛仔长裤</a>
+                                                <a href="javascript:;">休闲长裤</a>
+                                                <a href="javascript:;">运动长裤</a>
+                                                <a href="javascript:;">中短裤</a>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>
+                                                <a href="javascript:;">内衣</a>
+                                            </dt>
+                                            <dd>
+                                                <a href="javascript:;">背心短袖</a>
+                                                <a href="javascript:;">内衣裤装衫</a>
+                                                <a href="javascript:;">袜子</a>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                    <div class="nav-right">
+                                        <div class="show">
+                                            <a href="javascript:;"><img src="images/dao6.jpg" alt=""></a>
+                                        </div>
+                                        <div class="nav-logo">
+                                            <dl>
+                                                <div class="logo-box">
+                                                    <p>
+                                                        男装流行热门品牌
+                                                    </p>
+                                                    <dd><a href="javascript:;"><img src="images/mecity.jpg" alt=""></a></dd>
+                                                    <dd><a href="javascript:;"><img src="images/metersbonwe.png" alt=""></a></dd>
+                                                    <dd><a href="javascript:;"><img src="images/mango.jpg" alt=""></a></dd>
+                                                    <dd><a href="javascript:;"><img src="images/sp2.jpg" alt=""></a></dd>
+                                                    <dd><a href="javascript:;"><img src="images/sp1.jpg" alt=""></a></dd>
+                                                    <dd><a href="javascript:;"><img src="images/ysl.png" alt=""></a></dd>
+                                                    <dd><a href="javascript:;"><img src="images/adidas.png" alt=""></a></dd>
+                                                    <dd><a href="javascript:;"><img src="images/4.jpg" alt=""></a></dd>
+                                                </div>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="sub-list3 menu-list">
+                                <dl>
+                                    <dt>
+                                        <a href="javascript:;">女装</a>
+                                        <i></i>
+                                    </dt>
+                                    <dd>
+                                        <div class="dd-box">
+                                            <a href="javascript:;" class="colord51819">大衣</a>
+                                            <a href="javascript:;">夹克装</a>
+                                            <a href="javascript:;">牛仔裤</a>
+                                            <a href="javascript:;" class="colord51819">毛衣</a>
+                                            <a href="javascript:;">连衣裙</a>
+                                        </div>
+                                    </dd>
+                                </dl>
+                                <div class="nav-wrap">
+                                    <div class="nav-left">
+                                        <dl>
+                                            <dt>
+                                                <a href="javascript:;">上装</a>
+                                            </dt>
+                                            <dd>
+                                                <a href="javascript:;">夹克</a>
+                                                <a href="javascript:;">外套</a>
+                                                <a href="javascript:;">毛衣</a>
+                                                <a href="javascript:;">长袖衬衫</a>
+                                                <a href="javascript:;">T恤</a>
+                                                <a href="javascript:;">卫衣</a>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>
+                                                <a href="javascript:;">下装</a>
+                                            </dt>
+                                            <dd>
+                                                <a href="javascript:;">牛仔长裤</a>
+                                                <a href="javascript:;">运动长裤</a>
+                                                <a href="javascript:;">休闲长裤</a>
+                                                <a href="javascript:;">裤腿裤</a>
+                                                <a href="javascript:;">短裤</a>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>
+                                                <a href="javascript:;">裙装</a>
+                                            </dt>
+                                            <dd>
+                                                <a href="javascript:;">连衣裙</a>
+                                                <a href="javascript:;">半身裙</a>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>
+                                                <a href="javascript:;">内衣</a>
+                                            </dt>
+                                            <dd>
+                                                <a href="javascript:;">内衣裤装</a>
+                                                <a href="javascript:;">家居套装</a>
+                                                <a href="javascript:;">文胸</a>
+                                                <a href="javascript:;">娃子</a>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                    <div class="nav-right">
+                                        <div class="show">
+                                            <a href="javascript:;"><img src="images/dao1.jpg" alt=""></a>
+                                        </div>
+                                        <div class="nav-logo">
+                                            <dl>
+                                                <div class="logo-box">
+                                                    <p>
+                                                        女装流行热门品牌
+                                                    </p>
+                                                    <dd><a href="javascript:;"><img src="images/mecity.jpg" alt=""></a></dd>
+                                                    <dd><a href="javascript:;"><img src="images/metersbonwe.png" alt=""></a></dd>
+                                                    <dd><a href="javascript:;"><img src="images/mango.jpg" alt=""></a></dd>
+                                                    <dd><a href="javascript:;"><img src="images/sp2.jpg" alt=""></a></dd>
+                                                    <dd><a href="javascript:;"><img src="images/sp1.jpg" alt=""></a></dd>
+                                                    <dd><a href="javascript:;"><img src="images/ysl.png" alt=""></a></dd>
+                                                    <dd><a href="javascript:;"><img src="images/adidas.png" alt=""></a></dd>
+                                                    <dd><a href="javascript:;"><img src="images/4.jpg" alt=""></a></dd>
+                                                </div>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="sub-list4 menu-list">
+                                <dl>
+                                    <dt>
+                                        <a href="javascript:;">儿童</a>
+                                        <i></i>
+                                    </dt>
+                                    <dd>
+                                        <div class="dd-box">
+                                            <a href="javascript:;">外套</a>
+                                            <a href="javascript:;" class="colord51819">针织裤</a>
+                                            <a href="javascript:;">毛衣</a>
+                                            <a href="javascript:;">卫衣</a>
+                                            <a href="javascript:;">长袖T</a>
+                                        </div>
+                                    </dd>
+                                </dl>
+                                <div class="nav-wrap" style="display: none;">
+                                    <div class="nav-left">
+                                        <dl>
+                                            <dt>
+                                                <a href="javascript:;">上装</a>
+                                            </dt>
+                                            <dd>
+                                                <a href="javascript:;">毛衣</a>
+                                                <a href="javascript:;">夹克</a>
+                                                <a href="javascript:;">T恤</a>
+                                                <a href="javascript:;">衬衫</a>
+                                                <a href="javascript:;">卫衣</a>
+                                                <a href="javascript:;">外套</a>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>
+                                                <a href="javascript:;">下装</a>
+                                            </dt>
+                                            <dd>
+                                                <a href="javascript:;">针织裤</a>
+                                                <a href="javascript:;">牛仔裤</a>
+                                                <a href="javascript:;">休闲裤</a>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>
+                                                <a href="javascript:;">连身</a>
+                                            </dt>
+                                            <dd>
+                                                <a href="javascript:;">背带裤</a>
+                                                <a href="javascript:;">套装</a>
+                                                <a href="javascript:;">连衣裙</a>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>
+                                                <a href="javascript:;">搭配</a>
+                                            </dt>
+                                            <dd>
+                                                <a href="javascript:;">童鞋</a>
+                                                <a href="javascript:;">童包</a>
+                                                <a href="javascript:;">童饰品</a>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                    <div class="nav-right">
+                                        <div class="show">
+                                            <a href="javascript:;"><img src="images/dao5.jpg" alt=""></a>
+                                        </div>
+                                        <div class="nav-logo">
+                                            <dl>
+                                                <div class="logo-box">
+                                                    <p>
+                                                        童装流行热门品牌
+                                                    </p>
+                                                    <dd><a href="javascript:;"><img src="images/mecity.jpg" alt=""></a></dd>
+                                                    <dd><a href="javascript:;"><img src="images/metersbonwe.png" alt=""></a></dd>
+                                                    <dd><a href="javascript:;"><img src="images/mango.jpg" alt=""></a></dd>
+                                                    <dd><a href="javascript:;"><img src="images/sp2.jpg" alt=""></a></dd>
+                                                    <dd><a href="javascript:;"><img src="images/sp1.jpg" alt=""></a></dd>
+                                                    <dd><a href="javascript:;"><img src="images/ysl.png" alt=""></a></dd>
+                                                    <dd><a href="javascript:;"><img src="images/adidas.png" alt=""></a></dd>
+                                                    <dd><a href="javascript:;"><img src="images/4.jpg" alt=""></a></dd>
+                                                </div>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="sub-list5 menu-list">
+                                <dl>
+                                    <dt>
+                                        <a href="javascript:;">箱包</a>
+                                        <i></i>
+                                    </dt>
+                                    <dd>
+                                        <div class="dd-box">
+                                            <a href="javascript:;" class="colord51819">双肩包</a>
+                                            <a href="javascript:;">斜挎包</a>
+                                            <a href="javascript:;">钱包</a>
+                                            <a href="javascript:;">手提包</a>
+                                        </div>
+                                    </dd>
+                                </dl>
+                                <div class="nav-wrap" style="display: none;">
+                                    <div class="nav-left">
+                                        <dl>
+                                            <dt>
+                                                <a href="javascript:;">热门活动</a>
+                                            </dt>
+                                            <dd>
+                                                <a href="javascript:;">双肩包59元起</a>
+                                                <a href="javascript:;">新品上架1折起</a>
+                                                <a href="javascript:;">斜挎包6折封顶</a>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>
+                                                <a href="javascript:;">品质男包</a>
+                                            </dt>
+                                            <dd>
+                                                <a href="javascript:;">双肩包</a>
+                                                <a href="javascript:;">斜挎包</a>
+                                                <a href="javascript:;">钱包</a>
+                                                <a href="javascript:;">胸包</a>
+                                                <a href="javascript:;">手提手拿包</a>
+                                                <a href="javascript:;">单肩包</a>
+                                                <a href="javascript:;">腰包</a>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>
+                                                <a href="javascript:;">潮流女包</a>
+                                            </dt>
+                                            <dd>
+                                                <a href="javascript:;">双肩包</a>
+                                                <a href="javascript:;">斜挎包</a>
+                                                <a href="javascript:;">钱包</a>
+                                                <a href="javascript:;">拉杆箱</a>
+                                                <a href="javascript:;">化妆包</a>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                    <div class="nav-right">
+                                        <div class="show">
+                                            <a href="javascript:;"><img src="images/dao3.jpg" alt=""></a>
+                                        </div>
+                                        <div class="nav-logo">
+                                            <dl>
+                                                <div class="logo-box">
+                                                    <p>
+                                                        箱包流行热门品牌
+                                                    </p>
+                                                    <dd><a href="javascript:;"><img src="images/mecity.jpg" alt=""></a></dd>
+                                                    <dd><a href="javascript:;"><img src="images/metersbonwe.png" alt=""></a></dd>
+                                                    <dd><a href="javascript:;"><img src="images/mango.jpg" alt=""></a></dd>
+                                                    <dd><a href="javascript:;"><img src="images/sp2.jpg" alt=""></a></dd>
+                                                    <dd><a href="javascript:;"><img src="images/sp1.jpg" alt=""></a></dd>
+                                                    <dd><a href="javascript:;"><img src="images/ysl.png" alt=""></a></dd>
+                                                    <dd><a href="javascript:;"><img src="images/adidas.png" alt=""></a></dd>
+                                                    <dd><a href="javascript:;"><img src="images/4.jpg" alt=""></a></dd>
+                                                </div>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="sub-list6 menu-list">
+                                <dl>
+                                    <dt>
+                                        <a href="javascript:;">鞋履</a>
+                                        <i></i>
+                                    </dt>
+                                    <dd>
+                                        <div class="dd-box">
+                                            <a href="javascript:;">休闲鞋</a>
+                                            <a href="javascript:;">跑步鞋</a>
+                                            <a href="javascript:;">帆布鞋</a>
+                                            <a href="javascript:;" class="colord51819">板鞋</a>
+                                        </div>
+                                    </dd>
+                                </dl>
+                                <div class="nav-wrap">
+                                    <div class="nav-left">
+                                        <dl>
+                                            <dt>
+                                                <a href="javascript:;">热门活动</a>
+                                            </dt>
+                                            <dd>
+                                                <a href="javascript:;">匡威199元起</a>
+                                                <a href="javascript:;">adidas低至3折</a>
+                                                <a href="javascript:;">小白鞋sale恤</a>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>
+                                                <a href="javascript:;">品质男鞋</a>
+                                            </dt>
+                                            <dd>
+                                                <a href="javascript:;">休闲鞋</a>
+                                                <a href="javascript:;">运动鞋</a>
+                                                <a href="javascript:;">商务鞋</a>
+                                                <a href="javascript:;">时装鞋</a>
+                                                <a href="javascript:;">硫化鞋</a>
+                                                <a href="javascript:;">帆布鞋</a>
+                                                <a href="javascript:;">跑步鞋</a>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>
+                                                <a href="javascript:;">人气女鞋</a>
+                                            </dt>
+                                            <dd>
+                                                <a href="javascript:;">帆布鞋</a>
+                                                <a href="javascript:;">休闲鞋</a>
+                                                <a href="javascript:;">运动鞋</a>
+                                                <a href="javascript:;">凉鞋</a>
+                                                <a href="javascript:;">潮鞋</a>
+                                                <a href="javascript:;">时装鞋</a>
+                                                <a href="javascript:;">跑步鞋</a>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>
+                                                <a href="javascript:;">热卖中性</a>
+                                            </dt>
+                                            <dd>
+                                                <a href="javascript:;">运动鞋</a>
+                                                <a href="javascript:;">休闲鞋</a>
+                                                <a href="javascript:;">帆布鞋</a>
+                                                <a href="javascript:;">凉鞋</a>
+                                                <a href="javascript:;">滑板鞋</a>
+                                                <a href="javascript:;">单鞋</a>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                    <div class="nav-right">
+                                        <div class="show">
+                                            <a href="javascript:;"><img src="images/xiebaopei.jpg" alt=""></a>
+                                        </div>
+                                        <div class="nav-logo">
+                                            <dl>
+                                                <div class="logo-box">
+                                                    <p>
+                                                        鞋热门品牌
+                                                    </p>
+                                                    <dd><a href="javascript:;"><img src="images/mecity.jpg" alt=""></a></dd>
+                                                    <dd><a href="javascript:;"><img src="images/metersbonwe.png" alt=""></a></dd>
+                                                    <dd><a href="javascript:;"><img src="images/mango.jpg" alt=""></a></dd>
+                                                    <dd><a href="javascript:;"><img src="images/sp2.jpg" alt=""></a></dd>
+                                                    <dd><a href="javascript:;"><img src="images/sp1.jpg" alt=""></a></dd>
+                                                    <dd><a href="javascript:;"><img src="images/ysl.png" alt=""></a></dd>
+                                                    <dd><a href="javascript:;"><img src="images/adidas.png" alt=""></a></dd>
+                                                    <dd><a href="javascript:;"><img src="images/4.jpg" alt=""></a></dd>
+                                                </div>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="sub-list7 menu-list">
+                                <dl>
+                                    <dt>
+                                        <a href="javascript:;">配饰</a>
+                                        <i></i>
+                                    </dt>
+                                    <dd>
+                                        <div class="dd-box">
+                                            <a href="javascript:;" class="colord51819">腰带</a>
+                                            <a href="javascript:;">腕表</a>
+                                            <a href="javascript:;">帽子</a>
+                                            <a href="javascript:;">丝巾</a>
+                                            <a href="javascript:;">领带</a>
+                                        </div>
+                                    </dd>
+                                </dl>
+                                <div class="nav-wrap">
+                                    <div class="nav-left">
+                                        <dl>
+                                            <dt>
+                                                <a href="javascript:;">服配</a>
+                                            </dt>
+                                            <dd>
+                                                <a href="javascript:;">围巾</a>
+                                                <a href="javascript:;">腰带</a>
+                                                <a href="javascript:;">帽子</a>
+                                                <a href="javascript:;">腕表</a>
+                                                <a href="javascript:;">领带/领结</a>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>
+                                                <a href="javascript:;">小饰品</a>
+                                            </dt>
+                                            <dd>
+                                                <a href="javascript:;">耳饰</a>
+                                                <a href="javascript:;">吊坠/项链</a>
+                                                <a href="javascript:;">戒指</a>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                    <div class="nav-right">
+                                        <div class="show">
+                                            <a href="javascript:;"><img src="images/0901-6.jpg" alt=""></a>
+                                        </div>
+                                        <div class="nav-logo">
+                                            <dl>
+                                                <div class="logo-box">
+                                                    <p>
+                                                        配饰热门品牌
+                                                    </p>
+                                                    <dd><a href="javascript:;"><img src="images/mecity.jpg" alt=""></a></dd>
+                                                    <dd><a href="javascript:;"><img src="images/metersbonwe.png" alt=""></a></dd>
+                                                    <dd><a href="javascript:;"><img src="images/mango.jpg" alt=""></a></dd>
+                                                    <dd><a href="javascript:;"><img src="images/sp2.jpg" alt=""></a></dd>
+                                                    <dd><a href="javascript:;"><img src="images/sp1.jpg" alt=""></a></dd>
+                                                    <dd><a href="javascript:;"><img src="images/ysl.png" alt=""></a></dd>
+                                                    <dd><a href="javascript:;"><img src="images/adidas.png" alt=""></a></dd>
+                                                    <dd><a href="javascript:;"><img src="images/4.jpg" alt=""></a></dd>
+                                                </div>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="sub-list8 menu-list">
+                                <dl>
+                                    <dt>
+                                        <a href="javascript:;">生活</a>
+                                        <i></i>
+                                    </dt>
+                                    <dd>
+                                        <div class="dd-box">
+                                            <a href="javascript:;">床上纺织</a>
+                                            <a href="javascript:;">杯子</a>
+                                            <a href="javascript:;">手机数码</a>
+                                            <a href="javascript:;">居家日用</a>
+                                        </div>
+                                    </dd>
+                                </dl>
+                                <div class="nav-wrap" style="display: block;">
+                                    <div class="nav-left">
+                                        <dl>
+                                            <dt>
+                                                <a href="javascript:;">美妆个护</a>
+                                            </dt>
+                                            <dd>
+                                                <a href="javascript:;">乳液</a>
+                                                <a href="javascript:;">化妆水</a>
+                                                <a href="javascript:;">洁面</a>
+                                                <a href="javascript:;">面膜</a>
+                                                <a href="javascript:;">底妆</a>
+                                                <a href="javascript:;">礼盒</a>
+                                                <a href="javascript:;">优惠套装</a>
+                                                <a href="javascript:;">精华</a>
+                                                <a href="javascript:;">洗发护发</a>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>
+                                                <a href="javascript:;">生活</a>
+                                            </dt>
+                                            <dd>
+                                                <a href="javascript:;">创意礼品</a>
+                                                <a href="javascript:;">床上纺织品</a>
+                                                <a href="javascript:;">随行杯</a>
+                                                <a href="javascript:;">耳机杯</a>
+                                                <a href="javascript:;">保温杯</a>
+                                                <a href="javascript:;">沙发垫</a>
+                                                <a href="javascript:;">盖毯</a>
+                                                <a href="javascript:;">移动电源</a>
+                                                <a href="javascript:;">被芯</a>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                    <div class="nav-right">
+                                        <div class="show">
+                                            <a href="javascript:;"><img src="images/dao2.jpg" alt=""></a>
+                                        </div>
+                                        <div class="nav-logo">
+                                            <dl>
+                                                <div class="logo-box">
+                                                    <p>
+                                                        生活热门品牌
+                                                    </p>
+                                                    <dd><a href="javascript:;"><img src="images/mecity.jpg" alt=""></a></dd>
+                                                    <dd><a href="javascript:;"><img src="images/metersbonwe.png" alt=""></a></dd>
+                                                    <dd><a href="javascript:;"><img src="images/mango.jpg" alt=""></a></dd>
+                                                    <dd><a href="javascript:;"><img src="images/sp2.jpg" alt=""></a></dd>
+                                                    <dd><a href="javascript:;"><img src="images/sp1.jpg" alt=""></a></dd>
+                                                    <dd><a href="javascript:;"><img src="images/ysl.png" alt=""></a></dd>
+                                                    <dd><a href="javascript:;"><img src="images/adidas.png" alt=""></a></dd>
+                                                    <dd><a href="javascript:;"><img src="images/4.jpg" alt=""></a></dd>
+                                                </div>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="sub-list9 menu-list">
+                                <dl>
+                                    <dt>
+                                        <a href="javascript:;">折扣SALE</a>
+                                        <i></i>
+                                    </dt>
+                                    <dd>
+                                        <div class="dd-box">
+                                            <a href="javascript:;">1折区</a>
+                                            <a href="javascript:;">2折区</a>
+                                            <a href="javascript:;">3折区</a>
+                                        </div>
+                                    </dd>
+                                </dl>
+                                <div class="nav-wrap" style="display: none;">
+                                    <div class="nav-left">
+                                        <dl>
+                                            <dt>
+                                                <a href="javascript:;">一折区</a>
+                                            </dt>
+                                            <dd>
+                                                <a href="javascript:;">男生</a>
+                                                <a href="javascript:;">女生</a>
+                                                <a href="javascript:;">童装</a>
+                                                <a href="javascript:;">鞋履</a>
+                                                <a href="javascript:;">箱包</a>
+                                                <a href="javascript:;">服配</a>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>
+                                                <a href="javascript:;">二折区</a>
+                                            </dt>
+                                            <dd>
+                                                <a href="javascript:;">男生</a>
+                                                <a href="javascript:;">女生</a>
+                                                <a href="javascript:;">童装</a>
+                                                <a href="javascript:;">鞋履</a>
+                                                <a href="javascript:;">箱包</a>
+                                                <a href="javascript:;">服配</a>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>
+                                                <a href="javascript:;">三折区</a>
+                                            </dt>
+                                            <dd>
+                                                <a href="javascript:;">男生</a>
+                                                <a href="javascript:;">女生</a>
+                                                <a href="javascript:;">童装</a>
+                                                <a href="javascript:;">鞋履</a>
+                                                <a href="javascript:;">箱包</a>
+                                                <a href="javascript:;">服配</a>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>
+                                                <a href="javascript:;">三折封顶</a>
+                                            </dt>
+                                            <dd>
+                                                <a href="javascript:;">男生</a>
+                                                <a href="javascript:;">女生</a>
+                                                <a href="javascript:;">童装</a>
+                                                <a href="javascript:;">鞋履</a>
+                                                <a href="javascript:;">箱包</a>
+                                                <a href="javascript:;">服配</a>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                    <div class="nav-right">
+                                        <div class="show">
+                                            <a href="javascript:;"><img src="images/0801_01x.jpg" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li id="list2"><a href="javascript:;"><img class="img-text" src="images/sy.png" alt=""></a></li>
+        <li id="list3"><a href="javascript:;"><img class="img-text" src="images/rmpp.png" alt=""></a></li>
+        <li id="list4"><a href="javascript:;"><img class="img-text" src="images/bangbang.gif" alt=""></a></li>
+        <li id="list5"><a href="javascript:;"><img class="img-text" src="images/ggwxrzx.gif" alt=""></a></li>
+        <li id="list6"><a href="javascript:;"><img class="img-text" src="images/sale.png" alt=""></a></li>
+        <li id="list7"><a href="javascript:;"><img width="134" height="40" src="images/mobilegai.gif" alt=""></a></li>
+    </ul>
+</div>
+
+
+
+
+<div id="list-title">
+    <div class="list-left">
+        <a href="javascript:;" alt="邦购网首页">邦购网首页</a>
+        &gt; <a href="javascript:;" alt="品牌">品牌</a>
+        &gt; <a href="javascript:;" alt="3CTANG">3CTANG</a>
+    </div>
+</div>
+<div id="list-logo" class="clearfix">
+    <div class="list-text">
+        <li class="text-list1">
+            <img width="241" height="241" src="images/3cTANG.png" alt="logo">
+            <div class="text-like">
+                <a class="like" href="javascript:;">喜欢</a>
+            </div>
+        </li>
+        <li class="text-list2">"3CTANG认为原创就是生命力，將创意倾注与产品去雕琢，才能使時尚和品質得以完美体现。我们始终恪守原创的行为标准，这是我們走在行业前沿，引领行业发展的保证。在“科技改变生活”的今天，创意电子小配饰带给人们超乎想象的便利。
+
+            从3CTANG成立伊始，我们始终谨记对一佰的原始渴望，以“为大家服务”的宗旨，让移动数码装备注入新的活力，发扬自主创新优势，深入贯彻民族品牌国际化发展战略，力争成为具有国际声誉的自主品牌，并为大家的生活带去更多的快乐色彩，使之五彩缤纷。"</li>
+    </div>
+
+</div>
+<div id="list-main" class="clearfix">
+    <div class="list-left">
+        <div class="left-box">
+            <h1>分类</h1>
+            <ul>
+                <li>
+                    <em class="lift-btn"></em>
+                    <a class="lift" href="javascript:;">生活</a>
+                    <dl class="lift-box" style="display: none;">
+                        <dt><em class="phone"></em><a href="javascript:;" class="phone-text">手机数码</a></dt>
+                        <dd style="display: none;"><a href="javascript:;">电脑配件</a></dd>
+                        <dd style="display: none;"><a href="javascript:;">手机壳/套</a></dd>
+                        <dd style="display: none;"><a href="javascript:;">数据线</a></dd>
+                        <dd style="display: none;"><a href="javascript:;">自拍神器</a></dd>
+                    </dl>
+                    <dl class="paper-box" style="display: none;">
+                        <dt><em class="paper"></em><a class="paper-text" href="javascript:;">文具纸本</a></dt>
+                        <dd style="display: none;"><a href="javascript:;">笔袋笔盒</a></dd>
+                    </dl>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+    <div id="list-right" class="clearfix">
+        <div class="shop-frame">
+            <div class="shop-main">
+                <div id="mainSearch">
+                    <div class="shop-search">
+                        <span id="price">价格</span>
+                        <div class="search-right">
+                            <a href="javascript:;">
+                                <i>0-69</i>
+                            </a>
+                            <div class="qujian">
+                                <input type="text" id="start_price" value="">
+                                <b> - </b>
+                                <input type="text" id="end_price" value="">
+                                <input type="hidden" id="maxPrice" value="35.0">
+                                <input type="hidden" id="minPrice" value="15.0">
+                                <input type="button" class="mbshop_ie_btn_s_f_sure" name="btn_sure" value="确认">
+                                <span id="notice-msg" style="width:auto;padding-left:10px;border:0;color:red"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shop-search">
+                        <span id="97">性别</span>
+                        <div class="search-right">
+                            <a href="javascript:;">
+                                <i>其它</i>
+                            </a>
+                            <a href="javascript:;">
+                                <i>女</i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="shop-search">
+                        <span id="85">季节</span>
+                        <div class="search-right">
+                            <a href="javascript:;">
+                                <i>常年款</i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="seach_Box">
+                    <b>高级筛选</b>
+                    <div class="shuxing">
+                        <div class="option">
+                            <a class="option-menu"><i>
+                                颜色		            </i><em></em></a>
+                            <div class="opation-box">
+                                <a href="javascript:;">
+                                    <b style="background-color: #f400a1;"></b>红色系</a>
+                                <a href="javascript:;">
+                                    <b style="background-color: #b25d25;"></b>棕色系</a>
+                                <a href="javascript:;">
+                                    <b style="background-color: #ffffff;"></b>白色系</a>
+                                <a href="javascript:;">
+                                    <b style="background-color: #22ac38;"></b>绿色系</a>
+                                <a href="javascript:;">
+                                    <b style="background-color: #0068b7;"></b>蓝色系</a>
+                                <a href="javascript:;">
+                                    <b style="background-color: #fff143;"></b>黄色系</a>
+                                <a href="javascript:;">
+                                    <b style="background-color: #808080 ;"></b>灰色系</a>
+                                <a class="opation-all" href="javascript:;">
+                                    全部颜色			                 </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="searchAlert">
+        </div>
+        <div class="filter">
+            <div class="filter-left">
+                <a class="filter-red" href="javascript:;" alt="默认">默 认</a>
+                <a class="filterUp" href="javascript:;" alt="上架时间">上架时间</a>
+                <a class="filterUp" href="javascript:;" alt="销量">销量</a>
+                <a href="javascript:;" alt="折扣">折扣</a>
+                <a href="javascript:;" alt="价格">价格</a>
+            </div>
+            <div class="filter-right">
+                <div class="Act">
+                    <b>1/1</b>页   &nbsp;共<b>&nbsp;36&nbsp;</b>个商品 &nbsp;
+                </div>
+                <div class="ShowPd">
+                    <label><input type="radio" id="style" name="searchType" value="1" checked=""><span style="cursor:pointer">款式</span></label>
+                    <label><input type="radio" id="color" name="searchType" value="2"><span style="cursor:pointer">色系</span></label>&nbsp;&nbsp;
+                    <label><input type="checkbox" id="checkstock" checked="">
+                        <span style="cursor:pointer">仅显示有货</span></label>
+                </div>
+            </div>
+        </div>
+        <div id="img-list">
+            <ul class="img-box">
+                <li class="box-list"><a href="javascript:;" class="list-img" target="_blank">
+                    <img class="first-img" src="images/884516_00--w_300_h_410.jpg" alt="带钻可爱手机壳（不可用红包）" style="display: block;"></a>
+		<span class="list-text fl">
+		<a href="javascript:;" target="_blank" class="shop-text">3CTANG</a>
+					</span>
+                    <span class="list-text fl"><a href="javascript:;" target="_blank">带钻可爱手机壳（不可用红包）</a></span>
+		<span class="list-text">
+							<b>￥19.9</b>
+				<i>￥39</i>
+					</span>
+                    <div class="img-choose" id="shop-choose">
+                        <div class="img-scroll">
+                            <a class="left-img" href="javascript:;"><img src="images/884516_21_00--w_90.jpg" alt="" style="display: block;"></a>
+                            <a class="right-img" href="javascript:;"><img src="images/884516_22_00--w_90.jpg" alt="" style="display: block;"></a>
+                        </div>
+                        <span class="mbshop_listPdColorBtnRf" title="向右" style="display: none;"></span>
+                    </div>
+                </li>
+
+                <li class="box-list"><a href="javascript:;" class="list-img" target="_blank">
+                    <img src="images/884517_00--w_300_h_410.jpg" alt="带钻可爱手机壳（不可用红包）" style="display: block;"></a>
+		<span class="list-text fl">
+		<a href="javascript:;" target="_blank" class="shop-text">3CTANG</a>
+					</span>
+                    <span class="list-text fl"><a href="javascript:;" target="_blank">运动触屏数码包（不可用红包）</a></span>
+		<span class="list-text">
+							<b>￥19.9</b>
+				<i>￥39</i>
+					</span>
+                    <div class="img-choose">
+                        <div class="img-scroll">
+                            <a href="javascript:;"><img src="images/884517_70_00--w_90.jpg" alt="" style="display: block;"></a>
+                        </div>
+                        <span class="mbshop_listPdColorBtnRf" title="向右" style="display: none;"></span>
+                    </div>
+                </li>
+                <li class="box-list"><a href="javascript:;" class="list-img" target="_blank">
+                    <img src="images/873253_00--w_300_h_410.jpg" alt="带钻可爱手机壳（不可用红包）" style="display: block;"></a>
+		<span class="list-text fl">
+		<a href="javascript:;" target="_blank" class="shop-text">3CTANG</a>
+					</span>
+                    <span class="list-text fl"><a href="javascript:;" target="_blank">韩国设计最爱系列软壳手机壳iphone6-6s（不可用红包）</a></span>
+		<span class="list-text">
+							<b>￥19.9</b>
+				<i>￥39</i>
+					</span>
+                    <div class="img-choose">
+                        <div class="img-scroll">
+                            <a href="javascript:;"><img src="images/873253_90_00--w_90.jpg" alt="" style="display: block;"></a>
+                        </div>
+                        <span class="mbshop_listPdColorBtnRf" title="向右" style="display: none;"></span>
+                    </div>
+                </li>
+                <li class="box-list"><a href="javascript:;" class="list-img" target="_blank">
+                    <img src="images/873266_00--w_300_h_410.jpg" alt="带钻可爱手机壳（不可用红包）" style="display: block;"></a>
+		<span class="list-text fl">
+		<a href="javascript:;" target="_blank" class="shop-text">3CTANG</a>
+					</span>
+                    <span class="list-text fl"><a href="javascript:;" target="_blank">全新高品质手机通用自拍神器（不可用红包）</a></span>
+		<span class="list-text">
+							<b>￥19.9</b>
+				<i>￥39</i>
+					</span>
+                    <div class="img-choose">
+                        <div class="img-scroll">
+                            <a href="javascript:;"><img src="images/873266_70_00--w_90.jpg" alt="" style="display: block;"></a>
+                        </div>
+                        <span class="mbshop_listPdColorBtnRf" title="向右" style="display: none;"></span>
+                    </div>
+                </li>
+                <li class="box-list"><a href="details.html" class="list-img" target="_blank">
+                    <img src="images/img1.jpg" alt="带钻可爱手机壳（不可用红包）" style="display: block;"></a>
+		<span class="list-text fl">
+		<a href="javascript:;" target="_blank" class="shop-text">3CTANG</a>
+					</span>
+                    <span class="list-text fl"><a href="javascript:;" target="_blank">运动触屏数码包（不可用红包）</a></span>
+		<span class="list-text">
+							<b>￥19.9</b>
+				<i>￥39</i>
+					</span>
+                    <div class="img-choose">
+                        <div class="img-scroll">
+                            <a href="javascript:;"><img src="images/884517_70_00--w_90.jpg" alt="" style="display: block;"></a>
+                        </div>
+                        <span class="mbshop_listPdColorBtnRf" title="向右" style="display: none;"></span>
+                    </div>
+                </li>
+                <li class="box-list"><a href="details2.html" class="list-img" target="_blank">
+                    <img src="images/873253_00--w_300_h_410.jpg" alt="带钻可爱手机壳（不可用红包）" style="display: block;"></a>
+		<span class="list-text fl">
+		<a href="javascript:;" target="_blank" class="shop-text">3CTANG</a>
+					</span>
+                    <span class="list-text fl"><a href="javascript:;" target="_blank">韩国设计最爱系列软壳手机壳iphone6-6s（不可用红包）</a></span>
+		<span class="list-text">
+							<b>￥19.9</b>
+				<i>￥39</i>
+					</span>
+                    <div class="img-choose">
+                        <div class="img-scroll">
+                            <a href="javascript:;"><img src="images/873253_90_00--w_90.jpg" alt="" style="display: block;"></a>
+                        </div>
+                        <span class="mbshop_listPdColorBtnRf" title="向右" style="display: none;"></span>
+                    </div>
+                </li>
+                <li class="box-list"><a href="javascript:;" class="list-img" target="_blank">
+                    <img src="images/873266_00--w_300_h_410.jpg" alt="带钻可爱手机壳（不可用红包）" style="display: block;"></a>
+		<span class="list-text fl">
+		<a href="javascript:;" target="_blank" class="shop-text">3CTANG</a>
+					</span>
+                    <span class="list-text fl"><a href="javascript:;" target="_blank">全新高品质手机通用自拍神器（不可用红包）</a></span>
+		<span class="list-text">
+							<b>￥19.9</b>
+				<i>￥39</i>
+					</span>
+                    <div class="img-choose">
+                        <div class="img-scroll">
+                            <a href="javascript:;"><img src="images/873266_70_00--w_90.jpg" alt="" style="display: block;"></a>
+                        </div>
+                        <span class="mbshop_listPdColorBtnRf" title="向右" style="display: none;"></span>
+                    </div>
+                </li>
+                <li class="box-list"><a href="javascript:;" class="list-img" target="_blank">
+                    <img src="images/884517_00--w_300_h_410.jpg" alt="带钻可爱手机壳（不可用红包）" style="display: block;"></a>
+		<span class="list-text fl">
+		<a href="javascript:;" target="_blank" class="shop-text">3CTANG</a>
+					</span>
+                    <span class="list-text fl"><a href="javascript:;" target="_blank">运动触屏数码包（不可用红包）</a></span>
+		<span class="list-text">
+							<b>￥19.9</b>
+				<i>￥39</i>
+					</span>
+                    <div class="img-choose">
+                        <div class="img-scroll">
+                            <a href="javascript:;"><img src="images/884517_70_00--w_90.jpg" alt="" style="display: block;"></a>
+                        </div>
+                        <span class="mbshop_listPdColorBtnRf" title="向右" style="display: none;"></span>
+                    </div>
+                </li>
+                <li class="box-list"><a href="javascript:;" class="list-img" target="_blank">
+                    <img src="images/873253_00--w_300_h_410.jpg" alt="带钻可爱手机壳（不可用红包）" style="display: block;"></a>
+		<span class="list-text fl">
+		<a href="javascript:;" target="_blank" class="shop-text">3CTANG</a>
+					</span>
+                    <span class="list-text fl"><a href="javascript:;" target="_blank">韩国设计最爱系列软壳手机壳iphone6-6s（不可用红包）</a></span>
+		<span class="list-text">
+							<b>￥19.9</b>
+				<i>￥39</i>
+					</span>
+                    <div class="img-choose">
+                        <div class="img-scroll">
+                            <a href="javascript:;"><img src="images/873253_90_00--w_90.jpg" alt="" style="display: block;"></a>
+                        </div>
+                        <span class="mbshop_listPdColorBtnRf" title="向右" style="display: none;"></span>
+                    </div>
+                </li>
+                <li class="box-list"><a href="javascript:;" class="list-img" target="_blank">
+                    <img src="images/873266_00--w_300_h_410.jpg" alt="带钻可爱手机壳（不可用红包）" style="display: block;"></a>
+		<span class="list-text fl">
+		<a href="javascript:;" target="_blank" class="shop-text">3CTANG</a>
+					</span>
+                    <span class="list-text fl"><a href="javascript:;" target="_blank">全新高品质手机通用自拍神器（不可用红包）</a></span>
+		<span class="list-text">
+							<b>￥19.9</b>
+				<i>￥39</i>
+					</span>
+                    <div class="img-choose">
+                        <div class="img-scroll">
+                            <a href="javascript:;"><img src="images/873266_70_00--w_90.jpg" alt="" style="display: block;"></a>
+                        </div>
+                        <span class="mbshop_listPdColorBtnRf" title="向右" style="display: none;"></span>
+                    </div>
+                </li>
+                <li class="box-list"><a href="javascript:;" class="list-img" target="_blank">
+                    <img src="images/884517_00--w_300_h_410.jpg" alt="带钻可爱手机壳（不可用红包）" style="display: block;"></a>
+		<span class="list-text fl">
+		<a href="javascript:;" target="_blank" class="shop-text">3CTANG</a>
+					</span>
+                    <span class="list-text fl"><a href="javascript:;" target="_blank">运动触屏数码包（不可用红包）</a></span>
+		<span class="list-text">
+							<b>￥19.9</b>
+				<i>￥39</i>
+					</span>
+                    <div class="img-choose">
+                        <div class="img-scroll">
+                            <a href="javascript:;"><img src="images/884517_70_00--w_90.jpg" alt="" style="display: block;"></a>
+                        </div>
+                        <span class="mbshop_listPdColorBtnRf" title="向右" style="display: none;"></span>
+                    </div>
+                </li>
+                <li class="box-list"><a href="javascript:;" class="list-img" target="_blank">
+                    <img src="images/873253_00--w_300_h_410.jpg" alt="带钻可爱手机壳（不可用红包）" style="display: block;"></a>
+		<span class="list-text fl">
+		<a href="javascript:;" target="_blank" class="shop-text">3CTANG</a>
+					</span>
+                    <span class="list-text fl"><a href="javascript:;" target="_blank">韩国设计最爱系列软壳手机壳iphone6-6s（不可用红包）</a></span>
+		<span class="list-text">
+							<b>￥19.9</b>
+				<i>￥39</i>
+					</span>
+                    <div class="img-choose">
+                        <div class="img-scroll">
+                            <a href="javascript:;"><img src="images/873253_90_00--w_90.jpg" alt="" style="display: block;"></a>
+                        </div>
+                        <span class="mbshop_listPdColorBtnRf" title="向右" style="display: none;"></span>
+                    </div>
+                </li>
+                <li class="box-list"><a href="javascript:;" class="list-img" target="_blank">
+                    <img src="images/873266_00--w_300_h_410.jpg" alt="带钻可爱手机壳（不可用红包）" style="display: block;"></a>
+		<span class="list-text fl">
+		<a href="javascript:;" target="_blank" class="shop-text">3CTANG</a>
+					</span>
+                    <span class="list-text fl"><a href="javascript:;" target="_blank">全新高品质手机通用自拍神器（不可用红包）</a></span>
+		<span class="list-text">
+							<b>￥19.9</b>
+				<i>￥39</i>
+					</span>
+                    <div class="img-choose">
+                        <div class="img-scroll">
+                            <a href="javascript:;"><img src="images/873266_70_00--w_90.jpg" alt="" style="display: block;"></a>
+                        </div>
+                        <span class="mbshop_listPdColorBtnRf" title="向右" style="display: none;"></span>
+                    </div>
+                </li>
+                <li class="box-list"><a href="javascript:;" class="list-img" target="_blank">
+                    <img src="images/884517_00--w_300_h_410.jpg" alt="带钻可爱手机壳（不可用红包）" style="display: block;"></a>
+		<span class="list-text fl">
+		<a href="javascript:;" target="_blank" class="shop-text">3CTANG</a>
+					</span>
+                    <span class="list-text fl"><a href="javascript:;" target="_blank">运动触屏数码包（不可用红包）</a></span>
+		<span class="list-text">
+							<b>￥19.9</b>
+				<i>￥39</i>
+					</span>
+                    <div class="img-choose">
+                        <div class="img-scroll">
+                            <a href="javascript:;"><img src="images/884517_70_00--w_90.jpg" alt="" style="display: block;"></a>
+                        </div>
+                        <span class="mbshop_listPdColorBtnRf" title="向右" style="display: none;"></span>
+                    </div>
+                </li>
+                <li class="box-list"><a href="javascript:;" class="list-img" target="_blank">
+                    <img src="images/873253_00--w_300_h_410.jpg" alt="带钻可爱手机壳（不可用红包）" style="display: block;"></a>
+		<span class="list-text fl">
+		<a href="javascript:;" target="_blank" class="shop-text">3CTANG</a>
+					</span>
+                    <span class="list-text fl"><a href="javascript:;" target="_blank">韩国设计最爱系列软壳手机壳iphone6-6s（不可用红包）</a></span>
+		<span class="list-text">
+							<b>￥19.9</b>
+				<i>￥39</i>
+					</span>
+                    <div class="img-choose">
+                        <div class="img-scroll">
+                            <a href="javascript:;"><img src="images/873253_90_00--w_90.jpg" alt="" style="display: block;"></a>
+                        </div>
+                        <span class="mbshop_listPdColorBtnRf" title="向右" style="display: none;"></span>
+                    </div>
+                </li>
+                <li class="box-list"><a href="javascript:;" class="list-img" target="_blank">
+                    <img src="images/873266_00--w_300_h_410.jpg" alt="带钻可爱手机壳（不可用红包）" style="display: block;"></a>
+		<span class="list-text fl">
+		<a href="javascript:;" target="_blank" class="shop-text">3CTANG</a>
+					</span>
+                    <span class="list-text fl"><a href="javascript:;" target="_blank">全新高品质手机通用自拍神器（不可用红包）</a></span>
+		<span class="list-text">
+							<b>￥19.9</b>
+				<i>￥39</i>
+					</span>
+                    <div class="img-choose">
+                        <div class="img-scroll">
+                            <a href="javascript:;"><img src="images/873266_70_00--w_90.jpg" alt="" style="display: block;"></a>
+                        </div>
+                        <span class="mbshop_listPdColorBtnRf" title="向右" style="display: none;"></span>
+                    </div>
+                </li>
+                <li class="box-list"><a href="javascript:;" class="list-img" target="_blank">
+                    <img src="images/873253_00--w_300_h_410.jpg" alt="带钻可爱手机壳（不可用红包）" style="display: block;"></a>
+		<span class="list-text fl">
+		<a href="javascript:;" target="_blank" class="shop-text">3CTANG</a>
+					</span>
+                    <span class="list-text fl"><a href="javascript:;" target="_blank">韩国设计最爱系列软壳手机壳iphone6-6s（不可用红包）</a></span>
+		<span class="list-text">
+							<b>￥19.9</b>
+				<i>￥39</i>
+					</span>
+                    <div class="img-choose">
+                        <div class="img-scroll">
+                            <a href="javascript:;"><img src="images/873253_90_00--w_90.jpg" alt="" style="display: block;"></a>
+                        </div>
+                        <span class="mbshop_listPdColorBtnRf" title="向右" style="display: none;"></span>
+                    </div>
+                </li>
+                <li class="box-list"><a href="javascript:;" class="list-img" target="_blank">
+                    <img src="images/873266_00--w_300_h_410.jpg" alt="带钻可爱手机壳（不可用红包）" style="display: block;"></a>
+		<span class="list-text fl">
+		<a href="javascript:;" target="_blank" class="shop-text">3CTANG</a>
+					</span>
+                    <span class="list-text fl"><a href="javascript:;" target="_blank">全新高品质手机通用自拍神器（不可用红包）</a></span>
+		<span class="list-text">
+							<b>￥19.9</b>
+				<i>￥39</i>
+					</span>
+                    <div class="img-choose">
+                        <div class="img-scroll">
+                            <a href="javascript:;"><img src="images/873266_70_00--w_90.jpg" alt="" style="display: block;"></a>
+                        </div>
+                        <span class="mbshop_listPdColorBtnRf" title="向右" style="display: none;"></span>
+                    </div>
+                </li>
+                <li class="box-list"><a href="javascript:;" class="list-img" target="_blank">
+                    <img src="images/884517_00--w_300_h_410.jpg" alt="带钻可爱手机壳（不可用红包）" style="display: block;"></a>
+		<span class="list-text fl">
+		<a href="javascript:;" target="_blank" class="shop-text">3CTANG</a>
+					</span>
+                    <span class="list-text fl"><a href="javascript:;" target="_blank">运动触屏数码包（不可用红包）</a></span>
+		<span class="list-text">
+							<b>￥19.9</b>
+				<i>￥39</i>
+					</span>
+                    <div class="img-choose">
+                        <div class="img-scroll">
+                            <a href="javascript:;"><img src="images/884517_70_00--w_90.jpg" alt="" style="display: block;"></a>
+                        </div>
+                        <span class="mbshop_listPdColorBtnRf" title="向右" style="display: none;"></span>
+                    </div>
+                </li>
+                <li class="box-list"><a href="javascript:;" class="list-img" target="_blank">
+                    <img src="images/873253_00--w_300_h_410.jpg" alt="带钻可爱手机壳（不可用红包）" style="display: block;"></a>
+		<span class="list-text fl">
+		<a href="javascript:;" target="_blank" class="shop-text">3CTANG</a>
+					</span>
+                    <span class="list-text fl"><a href="javascript:;" target="_blank">韩国设计最爱系列软壳手机壳iphone6-6s（不可用红包）</a></span>
+		<span class="list-text">
+							<b>￥19.9</b>
+				<i>￥39</i>
+					</span>
+                    <div class="img-choose">
+                        <div class="img-scroll">
+                            <a href="javascript:;"><img src="images/873253_90_00--w_90.jpg" alt="" style="display: block;"></a>
+                        </div>
+                        <span class="mbshop_listPdColorBtnRf" title="向右" style="display: none;"></span>
+                    </div>
+                </li>
+                <li class="box-list"><a href="javascript:;" class="list-img" target="_blank">
+                    <img src="images/873266_00--w_300_h_410.jpg" alt="带钻可爱手机壳（不可用红包）" style="display: block;"></a>
+		<span class="list-text fl">
+		<a href="javascript:;" target="_blank" class="shop-text">3CTANG</a>
+					</span>
+                    <span class="list-text fl"><a href="javascript:;" target="_blank">全新高品质手机通用自拍神器（不可用红包）</a></span>
+		<span class="list-text">
+							<b>￥19.9</b>
+				<i>￥39</i>
+					</span>
+                    <div class="img-choose">
+                        <div class="img-scroll">
+                            <a href="javascript:;"><img src="images/873266_70_00--w_90.jpg" alt="" style="display: block;"></a>
+                        </div>
+                        <span class="mbshop_listPdColorBtnRf" title="向右" style="display: none;"></span>
+                    </div>
+                </li>
+                <li class="box-list"><a href="javascript:;" class="list-img" target="_blank">
+                    <img src="images/873253_00--w_300_h_410.jpg" alt="带钻可爱手机壳（不可用红包）" style="display: block;"></a>
+		<span class="list-text fl">
+		<a href="javascript:;" target="_blank" class="shop-text">3CTANG</a>
+					</span>
+                    <span class="list-text fl"><a href="javascript:;" target="_blank">韩国设计最爱系列软壳手机壳iphone6-6s（不可用红包）</a></span>
+		<span class="list-text">
+							<b>￥19.9</b>
+				<i>￥39</i>
+					</span>
+                    <div class="img-choose">
+                        <div class="img-scroll">
+                            <a href="javascript:;"><img src="images/873253_90_00--w_90.jpg" alt="" style="display: block;"></a>
+                        </div>
+                        <span class="mbshop_listPdColorBtnRf" title="向右" style="display: none;"></span>
+                    </div>
+                </li>
+                <li class="box-list"><a href="javascript:;" class="list-img" target="_blank">
+                    <img src="images/873266_00--w_300_h_410.jpg" alt="带钻可爱手机壳（不可用红包）" style="display: block;"></a>
+		<span class="list-text fl">
+		<a href="javascript:;" target="_blank" class="shop-text">3CTANG</a>
+					</span>
+                    <span class="list-text fl"><a href="javascript:;" target="_blank">全新高品质手机通用自拍神器（不可用红包）</a></span>
+		<span class="list-text">
+							<b>￥19.9</b>
+				<i>￥39</i>
+					</span>
+                    <div class="img-choose">
+                        <div class="img-scroll">
+                            <a href="javascript:;"><img src="images/873266_70_00--w_90.jpg" alt="" style="display: block;"></a>
+                        </div>
+                        <span class="mbshop_listPdColorBtnRf" title="向右" style="display: none;"></span>
+                    </div>
+                </li>
+                <li class="box-list"><a href="javascript:;" class="list-img" target="_blank">
+                    <img src="images/884517_00--w_300_h_410.jpg" alt="带钻可爱手机壳（不可用红包）" style="display: block;"></a>
+		<span class="list-text fl">
+		<a href="javascript:;" target="_blank" class="shop-text">3CTANG</a>
+					</span>
+                    <span class="list-text fl"><a href="javascript:;" target="_blank">运动触屏数码包（不可用红包）</a></span>
+		<span class="list-text">
+							<b>￥19.9</b>
+				<i>￥39</i>
+					</span>
+                    <div class="img-choose">
+                        <div class="img-scroll">
+                            <a href="javascript:;"><img src="images/884517_70_00--w_90.jpg" alt="" style="display: block;"></a>
+                        </div>
+                        <span class="mbshop_listPdColorBtnRf" title="向右" style="display: none;"></span>
+                    </div>
+                </li>
+                <li class="box-list"><a href="javascript:;" class="list-img" target="_blank">
+                    <img src="images/873253_00--w_300_h_410.jpg" alt="带钻可爱手机壳（不可用红包）" style="display: block;"></a>
+		<span class="list-text fl">
+		<a href="javascript:;" target="_blank" class="shop-text">3CTANG</a>
+					</span>
+                    <span class="list-text fl"><a href="javascript:;" target="_blank">韩国设计最爱系列软壳手机壳iphone6-6s（不可用红包）</a></span>
+		<span class="list-text">
+							<b>￥19.9</b>
+				<i>￥39</i>
+					</span>
+                    <div class="img-choose">
+                        <div class="img-scroll">
+                            <a href="javascript:;"><img src="images/873253_90_00--w_90.jpg" alt="" style="display: block;"></a>
+                        </div>
+                        <span class="mbshop_listPdColorBtnRf" title="向右" style="display: none;"></span>
+                    </div>
+                </li>
+                <li class="box-list"><a href="javascript:;" class="list-img" target="_blank">
+                    <img src="images/873266_00--w_300_h_410.jpg" alt="带钻可爱手机壳（不可用红包）" style="display: block;"></a>
+		<span class="list-text fl">
+		<a href="javascript:;" target="_blank" class="shop-text">3CTANG</a>
+					</span>
+                    <span class="list-text fl"><a href="javascript:;" target="_blank">全新高品质手机通用自拍神器（不可用红包）</a></span>
+		<span class="list-text">
+							<b>￥19.9</b>
+				<i>￥39</i>
+					</span>
+                    <div class="img-choose">
+                        <div class="img-scroll">
+                            <a href="javascript:;"><img src="images/873266_70_00--w_90.jpg" alt="" style="display: block;"></a>
+                        </div>
+                        <span class="mbshop_listPdColorBtnRf" title="向右" style="display: none;"></span>
+                    </div>
+                </li>
+                <li class="box-list"><a href="javascript:;" class="list-img" target="_blank">
+                    <img src="images/873253_00--w_300_h_410.jpg" alt="带钻可爱手机壳（不可用红包）" style="display: block;"></a>
+		<span class="list-text fl">
+		<a href="javascript:;" target="_blank" class="shop-text">3CTANG</a>
+					</span>
+                    <span class="list-text fl"><a href="javascript:;" target="_blank">韩国设计最爱系列软壳手机壳iphone6-6s（不可用红包）</a></span>
+		<span class="list-text">
+							<b>￥19.9</b>
+				<i>￥39</i>
+					</span>
+                    <div class="img-choose">
+                        <div class="img-scroll">
+                            <a href="javascript:;"><img src="images/873253_90_00--w_90.jpg" alt="" style="display: block;"></a>
+                        </div>
+                        <span class="mbshop_listPdColorBtnRf" title="向右" style="display: none;"></span>
+                    </div>
+                </li>
+                <li class="box-list"><a href="javascript:;" class="list-img" target="_blank">
+                    <img src="images/873266_00--w_300_h_410.jpg" alt="带钻可爱手机壳（不可用红包）" style="display: block;"></a>
+		<span class="list-text fl">
+		<a href="javascript:;" target="_blank" class="shop-text">3CTANG</a>
+					</span>
+                    <span class="list-text fl"><a href="javascript:;" target="_blank">全新高品质手机通用自拍神器（不可用红包）</a></span>
+		<span class="list-text">
+							<b>￥19.9</b>
+				<i>￥39</i>
+					</span>
+                    <div class="img-choose">
+                        <div class="img-scroll">
+                            <a href="javascript:;"><img src="images/873266_70_00--w_90.jpg" alt="" style="display: block;"></a>
+                        </div>
+                        <span class="mbshop_listPdColorBtnRf" title="向右" style="display: none;"></span>
+                    </div>
+                </li>
+                <li class="box-list"><a href="javascript:;" class="list-img" target="_blank">
+                    <img src="images/884517_00--w_300_h_410.jpg" alt="带钻可爱手机壳（不可用红包）" style="display: block;"></a>
+		<span class="list-text fl">
+		<a href="javascript:;" target="_blank" class="shop-text">3CTANG</a>
+					</span>
+                    <span class="list-text fl"><a href="javascript:;" target="_blank">运动触屏数码包（不可用红包）</a></span>
+		<span class="list-text">
+							<b>￥19.9</b>
+				<i>￥39</i>
+					</span>
+                    <div class="img-choose">
+                        <div class="img-scroll">
+                            <a href="javascript:;"><img src="images/884517_70_00--w_90.jpg" alt="" style="display: block;"></a>
+                        </div>
+                        <span class="mbshop_listPdColorBtnRf" title="向右" style="display: none;"></span>
+                    </div>
+                </li>
+                <li class="box-list"><a href="javascript:;" class="list-img" target="_blank">
+                    <img src="images/873253_00--w_300_h_410.jpg" alt="带钻可爱手机壳（不可用红包）" style="display: block;"></a>
+		<span class="list-text fl">
+		<a href="javascript:;" target="_blank" class="shop-text">3CTANG</a>
+					</span>
+                    <span class="list-text fl"><a href="javascript:;" target="_blank">韩国设计最爱系列软壳手机壳iphone6-6s（不可用红包）</a></span>
+		<span class="list-text">
+							<b>￥19.9</b>
+				<i>￥39</i>
+					</span>
+                    <div class="img-choose">
+                        <div class="img-scroll">
+                            <a href="javascript:;"><img src="images/873253_90_00--w_90.jpg" alt="" style="display: block;"></a>
+                        </div>
+                        <span class="mbshop_listPdColorBtnRf" title="向右" style="display: none;"></span>
+                    </div>
+                </li>
+                <li class="box-list"><a href="javascript:;" class="list-img" target="_blank">
+                    <img src="images/873266_00--w_300_h_410.jpg" alt="带钻可爱手机壳（不可用红包）" style="display: block;"></a>
+		<span class="list-text fl">
+		<a href="javascript:;" target="_blank" class="shop-text">3CTANG</a>
+					</span>
+                    <span class="list-text fl"><a href="javascript:;" target="_blank">全新高品质手机通用自拍神器（不可用红包）</a></span>
+		<span class="list-text">
+							<b>￥19.9</b>
+				<i>￥39</i>
+					</span>
+                    <div class="img-choose">
+                        <div class="img-scroll">
+                            <a href="javascript:;"><img src="images/873266_70_00--w_90.jpg" alt="" style="display: block;"></a>
+                        </div>
+                        <span class="mbshop_listPdColorBtnRf" title="向右" style="display: none;"></span>
+                    </div>
+                </li>
+                <li class="box-list"><a href="javascript:;" class="list-img" target="_blank">
+                    <img src="images/873253_00--w_300_h_410.jpg" alt="带钻可爱手机壳（不可用红包）" style="display: block;"></a>
+		<span class="list-text fl">
+		<a href="javascript:;" target="_blank" class="shop-text">3CTANG</a>
+					</span>
+                    <span class="list-text fl"><a href="javascript:;" target="_blank">韩国设计最爱系列软壳手机壳iphone6-6s（不可用红包）</a></span>
+		<span class="list-text">
+							<b>￥19.9</b>
+				<i>￥39</i>
+					</span>
+                    <div class="img-choose">
+                        <div class="img-scroll">
+                            <a href="javascript:;"><img src="images/873253_90_00--w_90.jpg" alt="" style="display: block;"></a>
+                        </div>
+                        <span class="mbshop_listPdColorBtnRf" title="向右" style="display: none;"></span>
+                    </div>
+                </li>
+                <li class="box-list"><a href="javascript:;" class="list-img" target="_blank">
+                    <img src="images/873266_00--w_300_h_410.jpg" alt="带钻可爱手机壳（不可用红包）" style="display: block;"></a>
+		<span class="list-text fl">
+		<a href="javascript:;" target="_blank" class="shop-text">3CTANG</a>
+					</span>
+                    <span class="list-text fl"><a href="javascript:;" target="_blank">全新高品质手机通用自拍神器（不可用红包）</a></span>
+		<span class="list-text">
+							<b>￥19.9</b>
+				<i>￥39</i>
+					</span>
+                    <div class="img-choose">
+                        <div class="img-scroll">
+                            <a href="javascript:;"><img src="images/873266_70_00--w_90.jpg" alt="" style="display: block;"></a>
+                        </div>
+                        <span class="mbshop_listPdColorBtnRf" title="向右" style="display: none;"></span>
+                    </div>
+                </li>
+                <li class="box-list"><a href="javascript:;" class="list-img" target="_blank">
+                    <img src="images/884517_00--w_300_h_410.jpg" alt="带钻可爱手机壳（不可用红包）" style="display: block;"></a>
+		<span class="list-text fl">
+		<a href="javascript:;" target="_blank" class="shop-text">3CTANG</a>
+					</span>
+                    <span class="list-text fl"><a href="javascript:;" target="_blank">运动触屏数码包（不可用红包）</a></span>
+		<span class="list-text">
+							<b>￥19.9</b>
+				<i>￥39</i>
+					</span>
+                    <div class="img-choose">
+                        <div class="img-scroll">
+                            <a href="javascript:;"><img src="images/884517_70_00--w_90.jpg" alt="" style="display: block;"></a>
+                        </div>
+                        <span class="mbshop_listPdColorBtnRf" title="向右" style="display: none;"></span>
+                    </div>
+                </li>
+                <li class="box-list"><a href="javascript:;" class="list-img" target="_blank">
+                    <img src="images/873253_00--w_300_h_410.jpg" alt="带钻可爱手机壳（不可用红包）" style="display: block;"></a>
+		<span class="list-text fl">
+		<a href="javascript:;" target="_blank" class="shop-text">3CTANG</a>
+					</span>
+                    <span class="list-text fl"><a href="javascript:;" target="_blank">韩国设计最爱系列软壳手机壳iphone6-6s（不可用红包）</a></span>
+		<span class="list-text">
+							<b>￥19.9</b>
+				<i>￥39</i>
+					</span>
+                    <div class="img-choose">
+                        <div class="img-scroll">
+                            <a href="javascript:;"><img src="images/873253_90_00--w_90.jpg" alt="" style="display: block;"></a>
+                        </div>
+                        <span class="mbshop_listPdColorBtnRf" title="向右" style="display: none;"></span>
+                    </div>
+                </li>
+                <li class="box-list"><a href="javascript:;" class="list-img" target="_blank">
+                    <img src="images/873266_00--w_300_h_410.jpg" alt="带钻可爱手机壳（不可用红包）" style="display: block;"></a>
+		<span class="list-text fl">
+		<a href="javascript:;" target="_blank" class="shop-text">3CTANG</a>
+					</span>
+                    <span class="list-text fl"><a href="javascript:;" target="_blank">全新高品质手机通用自拍神器（不可用红包）</a></span>
+		<span class="list-text">
+							<b>￥19.9</b>
+				<i>￥39</i>
+					</span>
+                    <div class="img-choose">
+                        <div class="img-scroll">
+                            <a href="javascript:;"><img src="images/873266_70_00--w_90.jpg" alt="" style="display: block;"></a>
+                        </div>
+                        <span class="mbshop_listPdColorBtnRf" title="向右" style="display: none;"></span>
+                    </div>
+                </li>
+
+
+            </ul>
+        </div>
+        <div class="shop-container" style="width:980px !important">
+            <div class="shop-btn">
+                <a class="current" href="javascript:;">1</a>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<div id="main-bot" class="clearfix" style="min-width: 1200px;">
+    <div id="bot-main">
+        <ul class="bot-list">
+            <li><a href="javascript:;"><img src="images/zyshare01.png" alt=""></a></li>
+            <li><a href="javascript:;"><img src="images/zyshare02.png" alt=""></a></li>
+            <li><a href="javascript:;"><img src="images/zyshare03.png" alt=""></a></li>
+        </ul>
+        <div class="bot-right">
+            <div class="bot-top">
+                <li><a href="javascript:;"><img src="images/060819.jpg" alt=""></a></li>
+            </div>
+            <div class="bot-bot">
+                <ul>
+                    <li>
+                        <img src="images/indexonline.png" alt="">
+                        <p>在线客服</p>
+                    </li>
+                    <li class="sug">
+                        <img src="images/indexopinion.png" alt="">
+                        <p>意见反馈</p>
+                    </li>
+                    <li class="question">
+                        <img src="images/indexsurvey.png" alt="">
+                        <p>问卷调查</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="foot">
+    <div id="foot-main">
+        <div id="foot-top">
+            <dl>
+                <dt>新手指南</dt>
+                <dd><a target="_blank" href="javascript:;">
+                    注册新用户</a></dd>
+                <dd><a target="_blank" href="javascript:;">
+                    用户协议</a></dd>
+                <dd><a target="_blank" href="javascript:;">
+                    找回密码</a></dd>
+            </dl>
+            <dl>
+                <dt>购物指南</dt>
+                <dd><a target="_blank" href="javascript:;">
+                    红包使用说明</a></dd>
+                <dd><a target="_blank" href="javascript:;">
+                    购物流程</a></dd>
+                <dd><a target="_blank" href="javascript:;">
+                    订单状态</a></dd>
+                <dd><a target="_blank" href="javascript:;">
+                    邦购币绑定与使用</a></dd>
+            </dl>
+            <dl>
+                <dt>配送方式</dt>
+                <dd><a target="_blank" href="javascript:;">
+                    配送范围</a></dd>
+                <dd><a target="_blank" href="javascript:;">
+                    订单拆分</a></dd>
+                <dd><a target="_blank" href="javascript:;">
+                    商品验货与签收</a></dd>
+            </dl>
+            <dl>
+                <dt>支付方式</dt>
+                <dd><a target="_blank" href="javascript:;">
+                    发票制度</a></dd>
+                <dd><a target="_blank" href="javascript:;">
+                    支付方式</a></dd>
+            </dl>
+            <dl>
+                <dt>售后服务</dt>
+                <dd><a target="_blank" href="javascript:;">
+                    退换货政策</a></dd>
+                <dd><a target="_blank" href="javascript:;">
+                    退换办理流程</a></dd>
+                <dd><a target="_blank" href="javascript:;">
+                    退款说明</a></dd>
+            </dl>
+
+            <dl>
+                <dt>联系方式</dt>
+                <dd>客服：400 821 9988</dd>
+                <dd>监督：021-38119999-6038</dd>
+                <dd><a href="javascript:;" target="_blank">在线客服</a></dd>
+                <dd><a href="javascript:;" target="_blank">用户调研</a></dd>
+            </dl>
+        </div>
+        <div id="foot-bot">
+            <p>CopyRight © 2000-2016, 版权所有&nbsp;上海美特斯邦威服饰股份有限公司 banggo.com 沪ICP备05033127号</p>
+                <span>
+                    <a href="javascript:;" target="_blank"><img src="images/lz_beian_h40.png" width="136" height="40" alt="网站备案信息" style="display: block; opacity: 1;"></a>
+                    <a href="javascript:;" target="_blank"><img src="images/lz_shgs_h40.png" width="118" height="40" alt="上海工商" style="display: block; opacity: 1;"></a>
+                </span>
+        </div>
+    </div>
+</div>
+<div id="btn">
+    <a class="top" href="javascript:;" style="display: block;"></a>
+    <a class="call" href="javascript:;"></a>
+</div>
+</body>
+</html>

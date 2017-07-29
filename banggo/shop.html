@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>购物车</title>
+    <link rel="stylesheet" href="style/index.css">
+    <script src="js/jQuery.js"></script>
+    <script src="js/jquery.cookie.js"></script>
+    <script src="js/cookie.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/shop.js"></script>
+</head>
+<body>
+<div id="head-logo" style="height: 60px;">
+    <div id="head-main" style="height: 60px;">
+        <div id="head-left">
+            <a href="javascript:;" class="first"><img src="images/veo_brand_1.png" alt="首页"></a>
+            <a href="javascript:;"><img src="images/veo_brand_2.png" alt="美特斯邦威"></a>
+            <a href="javascript:;"><img src="images/veo_brand_3.png" alt="米喜迪" style="opacity: 1;"></a>
+            <a href="javascript:;"><img src="images/veo_brand_4.png" alt="米喜迪kids" style="opacity: 1;"></a>
+            <a href="javascript:;"><img src="images/veo_brand_5.png" alt="Moomoo" style="opacity: 1;"></a>
+        </div>
+    </div>
+</div>
+<div class="land">
+    <div class="land_main">
+        <p class="left" id="left">欢迎来到邦购网，全场满199元包邮</p>
+        <div class="right">
+            <div class="right_little right1">
+                <a class="text text1" href="javascript:;">登录<em></em></a>
+                <div class="right_box box1">
+                    <a href="javascript:;">QQ账户登录</a>
+                    <a href="javascript:;">支付宝登录</a>
+                    <a href="javascript:;">微信账户登录</a>
+                </div>
+            </div>
+            <div class="right_little right2">
+                <a class="text2" href="javascript:;">注册</a>
+            </div>
+            <div class="right_little right3">
+                <a class="text text3" href="javascript:;">我的邦购<em></em></a>
+                <div class="right_box box2">
+                    <a href="javascript:;">我的订单</a>
+                    <a href="javascript:;">我的积分</a>
+                    <a href="javascript:;">我的点赞</a>
+                    <a href="javascript:;">收货地址</a>
+                </div>
+            </div>
+            <div class="right_little">
+                <a style="width:60px" class="text4" href="javascript:;" target="_blank">会员中心</a>
+            </div>
+            <div class="right_little right4">
+                <a href="javascript:;" title="" target="_blank" class="text down">
+                    <b class="down" style="width:9px;height:10px;background:url('images/Iphone-vertical.png') 0 0 no-repeat;padding-right:12px;"></b>
+                    下载APP
+                    <em style="width:90px"></em>
+                </a>
+                <div class="right_box box3">
+                    <img alt="扫描邦购手机二维码" src="images/mbshop_pic_mobile.png" width="140" height="140">
+                </div>
+            </div>
+            <div class="right_little">
+                <a href="javascript:;" target="_blank" title="新浪微博" class="text4">微博</a>
+                <a title="" class="wx">微信
+                    <div class="wx_box">
+                        <img src="images/mbshop_pic_erweima.jpg" width="140" height="140" alt="">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="veo_pop_warp">
+    <div class="veo_pop">
+        <p id="pop_message"></p>
+        <div class="veo_pop_btn"><span class="close_pop">确定</span></div>
+        <img class="guanbi" src="images/Veo_double11_wap_pop_goods_close_grey.png" alt="">
+    </div>
+</div>
+
+<div id="shop-logo" class="clearfix">
+    <div class="shopl-left">
+        <div class="shop-logo-left" id="ad_common_logo"><a style="width:230px;height:55px;float:left;overflow:hidden" href="banggou.html"><img src="images/mbshop_new_logo2.png" style="margin-top:-10px;margin-left:-23px;display:block;opacity:1;" width="266" height="73" alt="banggo"></a></div>
+    </div>
+</div>
+<div id="shop-con">
+<div id="shop-Content" class="clearfix">
+    <span class="shop-state"></span>
+</div>
+</div>
+<div id="s-catnum">
+    <div class="sCat-title">
+        购物袋
+    </div>
+    <label class="shop-cat-num">(1)</label>
+</div>
+<div id="cat-top">
+<ol name="tag" id="sCat-top">
+    <li class="shop-cat1">
+        <label class="shop-checkbox">
+            <input name="checkAll" storetype="" checked="true" type="checkbox">
+            <i class="shop-choose"></i>
+            <b>全选</b>
+        </label>
+    </li>
+    <li class="shop-cat2">商品信息</li>
+    <li class="shop-cat3">颜色尺码</li>
+    <li class="shop-cat4">单价(元)</li>
+    <li class="shop-cat5">数量</li>
+    <li class="shop-cat6">小计</li>
+    <li class="shop-cat7">操作</li>
+</ol>
+</div>
+<div id="shop-box">
+    <!--<div id="cartEmpty" class="mbshop_container" style="display:block;">
+        <div class="mbshop_cartico"></div>
+        <div class="mbshop_cartnone">
+            <b>您的购物袋还是空的，赶紧行动吧！您可以：</b><br>
+            马上去 <a href="javascript:;">挑选商品</a>，或查看 <a href="javascript:;">我的收藏夹</a><br>
+        </div>
+    </div>-->
+    <div class="shop-all">
+        <div class="shop-tab">
+            <label class="mbshop_checkbox">
+                <i class="iconfont"></i>
+                <b>邦购</b>
+            </label>
+            <em id="cart-text">满199包邮</em>
+        </div>
+        <div class="shop-cat-box">
+
+        </div>
+    </div>
+    <div class="count">
+        <div class="go-balance">
+            <div class="goBalance-left">
+                <label class="go_checkbox">
+                    <i class="go-iconfont"></i>
+                    <b>全选</b>
+                </label>
+                <p class="go-delet">删除选中商品</p>
+                <p class="go-clean">清除失效商品</p>
+                <p class="goleft-add">合计(不含运费)：<i>￥<span class="shop-zojia"></span></i></p>
+                <p class="goleft-price">商品总价<i>￥<span class="shop-youhui"></span></i> - 优惠<em>￥0</em></p>
+                <p class="goleft-have">已选商品<em class="xuan-shop">0</em>件</p>
+            </div>
+            <a href="order.html" class="goBalance-right">去结算</a>
+
+        </div>
+    </div>
+</div>
+
+
+
+<div id="main-bot" style="min-width: 1200px;">
+    <div id="bot-main">
+        <ul class="bot-list">
+            <li><a href="javascript:;"><img src="images/zyshare01.png" alt=""></a></li>
+            <li><a href="javascript:;"><img src="images/zyshare02.png" alt=""></a></li>
+            <li><a href="javascript:;"><img src="images/zyshare03.png" alt=""></a></li>
+        </ul>
+        <div class="bot-right">
+            <div class="bot-top">
+                <li><a href="javascript:;"><img src="images/060819.jpg" alt=""></a></li>
+            </div>
+            <div class="bot-bot">
+                <ul>
+                    <li>
+                        <img src="images/indexonline.png" alt="">
+                        <p>在线客服</p>
+                    </li>
+                    <li class="sug">
+                        <img src="images/indexopinion.png" alt="">
+                        <p>意见反馈</p>
+                    </li>
+                    <li class="question">
+                        <img src="images/indexsurvey.png" alt="">
+                        <p>问卷调查</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="foot">
+    <div id="foot-main">
+        <div id="foot-top">
+            <dl>
+                <dt>新手指南</dt>
+                <dd><a target="_blank" href="javascript:;">
+                    注册新用户</a></dd>
+                <dd><a target="_blank" href="javascript:;">
+                    用户协议</a></dd>
+                <dd><a target="_blank" href="javascript:;">
+                    找回密码</a></dd>
+            </dl>
+            <dl>
+                <dt>购物指南</dt>
+                <dd><a target="_blank" href="javascript:;">
+                    红包使用说明</a></dd>
+                <dd><a target="_blank" href="javascript:;">
+                    购物流程</a></dd>
+                <dd><a target="_blank" href="javascript:;">
+                    订单状态</a></dd>
+                <dd><a target="_blank" href="javascript:;">
+                    邦购币绑定与使用</a></dd>
+            </dl>
+            <dl>
+                <dt>配送方式</dt>
+                <dd><a target="_blank" href="javascript:;">
+                    配送范围</a></dd>
+                <dd><a target="_blank" href="javascript:;">
+                    订单拆分</a></dd>
+                <dd><a target="_blank" href="javascript:;">
+                    商品验货与签收</a></dd>
+            </dl>
+            <dl>
+                <dt>支付方式</dt>
+                <dd><a target="_blank" href="javascript:;">
+                    发票制度</a></dd>
+                <dd><a target="_blank" href="javascript:;">
+                    支付方式</a></dd>
+            </dl>
+            <dl>
+                <dt>售后服务</dt>
+                <dd><a target="_blank" href="javascript:;">
+                    退换货政策</a></dd>
+                <dd><a target="_blank" href="javascript:;">
+                    退换办理流程</a></dd>
+                <dd><a target="_blank" href="javascript:;">
+                    退款说明</a></dd>
+            </dl>
+
+            <dl>
+                <dt>联系方式</dt>
+                <dd>客服：400 821 9988</dd>
+                <dd>监督：021-38119999-6038</dd>
+                <dd><a href="javascript:;" target="_blank">在线客服</a></dd>
+                <dd><a href="javascript:;" target="_blank">用户调研</a></dd>
+            </dl>
+        </div>
+        <div id="foot-bot">
+            <p>CopyRight © 2000-2016, 版权所有&nbsp;上海美特斯邦威服饰股份有限公司 banggo.com 沪ICP备05033127号</p>
+                <span>
+                    <a href="javascript:;" target="_blank"><img src="images/lz_beian_h40.png" width="136" height="40" alt="网站备案信息" style="display: block; opacity: 1;"></a>
+                    <a href="javascript:;" target="_blank"><img src="images/lz_shgs_h40.png" width="118" height="40" alt="上海工商" style="display: block; opacity: 1;"></a>
+                </span>
+        </div>
+    </div>
+</div>
+<div id="btn">
+    <a class="top" href="javascript:;" style="display: block;"></a>
+    <a class="call" href="javascript:;"></a>
+</div>
+</body>
+</html>
